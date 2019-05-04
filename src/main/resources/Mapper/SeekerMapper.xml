@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wyxeainn.mapper.SeekerMapper">
+    <!-- 判断信息是否存在 -->
+    <select id="accountExist" parameterType="String" resultType="Integer">
+        select count(*) from t_seeker where phone=#{phone}
+    </select>
+
+    <!-- 插入一个求职者 -->
+    <insert id="insertSeeker" parameterType="Seeker">
+        insert into t_seeker (phone,psrc,sex) values (#{phone},#{psrc},#{sex})
+    </insert>
+
+    <select id="selectSeekerById" parameterType="Integer" resultType="Seeker">
+        select * from t_seeker where id=#{id}
+    </select>
+
+    <select id="selectSeekerByPhone" parameterType="String" resultType="Seeker">
+        select * from t_seeker where phone=#{phone}
+    </select>
+
+    <update id="updateSeeker" parameterType="Seeker">
+        update t_seeker set sname=#{sname},status=#{status},sex=#{sex},workExp=#{workExp},birth=#{birth},weichat=#{weichat},email=#{email},updateTime=#{updateTime},education=#{education} where phone=#{phone}
+    </update>
+
+    <update id="updateAdvantage" parameterType="Seeker">
+        update t_seeker set advantage=#{advantage} where phone=#{phone}
+    </update>
+
+    <select id="selectById" parameterType="Integer" resultType="Seeker">
+        select * from t_seeker where id=#{id}
+    </select>
+
+    <update id="updatePhoneById" parameterType="Seeker">
+        update t_seeker set phone=#{phone} where id=#{id}
+    </update>
+
+    <update id="updatePsrc" parameterType="Seeker">
+        update t_seeker set psrc=#{psrc} where id=#{id}
+    </update>
+
+    <delete id="deleteById" parameterType="Page">
+        delete from ${tableName} where id=#{id}
+    </delete>
+
+    <select id="selectNameAndPhoto" parameterType="java.util.List" resultType="Seeker">
+        select id,sname,psrc from t_seeker where id in <foreach collection="list" item="id" open="("  separator="," close=")">#{id}</foreach>
+    </select>
+
+    <select id="selectSeekerByCondition" parameterType="Condition" resultType="Seeker">
+        select id,sname,psrc,education,workExp from t_seeker where workExp like #{workExp} and status=#{status} and education like #{education}
+    </select>
+
+</mapper>

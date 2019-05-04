@@ -1,0 +1,79 @@
+.jobInforContainer{
+    width: 100%;
+    height: auto;
+    background-color: #F3F7F9;
+}
+
+.jobInforDiv{
+    width: 1000px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.jobTypeDiv{
+    width: 1000px;
+    height: auto;
+    background-color: #ffffff;
+}
+
+.jobTypeDiv label{
+    margin-top: 25px;
+    margin-left: 25px;
+    font-weight: normal;
+}
+
+.jobList{
+    margin-top: 30px;
+    width: 1000px;
+    height: auto;
+    background-color: #ffffff;
+}
+
+.jobItem{
+    width: 900px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 50px;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: #F3F7F9;
+}
+
+.jobName{
+    font-size: 17px;
+    font-weight: normal;
+    color: #5DD5C8;
+    text-decoration: none;
+}
+.jobSalary{
+    color: red;
+    margin-left: 20px;
+    font-weight: lighter;
+}
+.jobExp{
+    margin-left: 20px;
+    font-weight: lighter;
+}
+.bossPhoto{
+    margin-left: 180px;
+}
+.bossNickName{
+    margin-left: 10px;
+    font-weight: normal;
+}
+.bossJob{
+    margin-left: 10px;
+    font-weight: normal;
+}
+.bossTime{
+    margin-left: 10px;
+    font-weight: normal;
+}
+
+.jobPage {
+    width: 1000px;
+    height: 60px;
+    text-align: center;
+    background-color: #ffffff;
+}

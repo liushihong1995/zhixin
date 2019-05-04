@@ -1,0 +1,49 @@
+
+.cardFrontDiv{
+    width: 950px;
+    height: 480px;
+}
+.cardFrontLeft{
+    margin-left: 30px;
+    margin-top: 10px;
+    width: 350px;
+    height: 450px;
+    float: left;
+}
+.cardFrontLeft p{
+    margin-left: 20px;
+}
+
+.cardFrontRight{
+    width: 450px;
+    height: 450px;
+    margin-top: 10px;
+    float: right;
+}
+
+#changePhoto{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 150px;
+}
+#uploadPhoto{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 260px;
+}
+
+#previousStep{
+    margin-left: 160px;
+    background: #5DD5C8;
+    color: #ffffff;
+}
+#nextStep{
+    margin-left: 30px;
+    background: #5DD5C8;
+    color: #ffffff;
+}
+
+.img-container{
+    width: 350px;
+    height: 400px;
+}

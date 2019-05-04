@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/**
+界面容器
+ */
+.attestation_container{
+    width:100%;
+    height:100%;
+    background-color: #F6F6F8;
+}
+
+.attestation_header{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+.attestation_second{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20px;
+    bottom: 0;
+    margin: auto;
+    width: 1000px;
+    height: 550px;
+    background-color: #ffffff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.attestation_step{
+    margin-top: 30px;
+    margin-left: 25px;
+    width: 950px;
+    height: 40px;
+    background-color: #E0EEEE;
+}
+
+.step_item{
+    margin-left: 30px;
+    width: 180px;
+    height: 50px;
+    float: left;
+}
+.order_item{
+    width: 180px;
+    height: 40px;
+}
+.order{
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #2b669a;
+    font-size: 18px;
+    color: #2b669a;
+    border-radius: 20px;
+    float: left;
+}
+.order label{
+    margin-top: 5px;
+    margin-left: 12px;
+}
+.item_title{
+    width: 130px;
+    height: 40px;
+    font-size: 17px;
+    color: #2b669a;
+    float: left;
+}
+.item_title label{
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+.basic_infor_div{
+    margin-top: 10px;
+    width: 500px;
+    height: 400px;
+    margin-left: 20px;
+    float: left;
+}
+.basic_infor_div label{
+    margin-left: 50px;
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: normal;
+}
+.basic_infor_div input{
+    width: 300px;
+    height: 35px;
+    margin-left: 10px;
+}
+
+#male{
+    margin-left: 10px;
+    width: 140px;
+    height: 35px;
+    background-color: #F0F8FF;
+}
+#female{
+    margin-left: 10px;
+    width: 140px;
+    height: 35px;
+    background-color: #F0F8FF;
+}
+
+#saveOneStep{
+    width: 80px;
+    height: 35px;
+    margin-left: 710px;
+    background-color: #5DD5C8;
+    color: #ffffff;
+}
+
+#oneStep{
+    width: 80px;
+    height: 35px;
+    margin-left: 30px;
+    background-color: #5DD5C8;
+    color: #ffffff;
+}
+
+.compList{
+    position: absolute;
+    margin-left: 125px;
+    background-color: #F0FFF0;
+    width: 300px;
+    height: auto;
+    z-index: 10;
+    display: none;
+}
+.compList ul{
+    list-style-type: none;
+}
+
+#cancel {
+    width: 60px;
+    margin-top: 30px;
+    background-color: #5DD5C8;
+    color: white;
+    margin-left: 255px;
+}
+
+#saveInfor {
+    width: 80px;
+    margin-top: 13px;
+    background-color: #5DD5C8;
+    color: white;
+    margin-left: 200px;
+}

@@ -1,0 +1,62 @@
+.attestation_third{
+    width: 1000px;
+    height: 700px;
+    /*background-color: #a6e1ec;*/
+    background-color: #ffffff;
+}
+.blank{
+    width: 1000px;
+    height: 50px;
+    background-color: #F6F6F8;
+}
+.attestation_step{
+    margin-top: 30px;
+    margin-left: 25px;
+    width: 950px;
+    height: 40px;
+    background-color: #E0EEEE;
+}
+
+.step_item{
+    margin-left: 30px;
+    width: 180px;
+    height: 50px;
+    float: left;
+}
+.order_item{
+    width: 180px;
+    height: 40px;
+}
+.order{
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #2b669a;
+    font-size: 18px;
+    color: #2b669a;
+    border-radius: 20px;
+    float: left;
+}
+.order label{
+    margin-top: 5px;
+    margin-left: 12px;
+}
+.item_title{
+    width: 130px;
+    height: 40px;
+    font-size: 17px;
+    color: #2b669a;
+    float: left;
+}
+.item_title label{
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+.cardImageDiv{
+    width: 950px;
+    height: 480px;
+    margin-left: 30px;
+    margin-top: 10px;
+}

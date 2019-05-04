@@ -1,0 +1,222 @@
+.compHotJobDiv{
+    width: 100%;
+    height: 150px;
+    background-color: #F3F7F9;
+}
+.compHotJob{
+    width: 1000px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.compHotJobUp{
+    width: 1000px;
+    height: 15px;
+}
+#hotJobLabel{
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 17px;
+    font-weight: lighter;
+}
+#showAllJob{
+    margin-left: 760px;
+    font-weight: lighter;
+}
+.compHotJobDown{
+    margin-top: 5px;
+    width: 1000px;
+    height: 130px;
+}
+.hotJobItem{
+    margin-left: 10px;
+    margin-top: 15px;
+    width: 310px;
+    height: 100px;
+    background-color: #ffffff;
+    float: left;
+}
+
+.jobName{
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+.jobSalary{
+    width: 100px;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: red;
+}
+.jobExp{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-weight: lighter;
+    font-size: 12px;
+}
+.jobEdu{
+    margin-top: 10px;
+    margin-left: 15px;
+    font-weight: lighter;
+    font-size: 12px;
+}
+.jobCity{
+    margin-top: 10px;
+    margin-left: 15px;
+    font-weight: lighter;
+    font-size: 12px;
+}
+.bussinessInforDiv{
+    width: 100%;
+    height: auto;
+}
+.bussinessInfor{
+    width: 1000px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bussinessInforLeft{
+    margin-left: 10px;
+    width: 650px;
+    height: auto;
+    float: left;
+}
+.bussinessInforRight{
+    width: 320px;
+    height: auto;
+    float: right;
+}
+.compSummary{
+    margin-top: 30px;
+    width: 600px;
+    height: auto;
+}
+.leftTitle{
+    margin-top: 20px;
+    width: 600px;
+    height: 15px;
+}
+.rightTitle{
+    margin-top: 20px;
+    width: 320px;
+    height: 15px;
+}
+.summary{
+    margin-top: 20px;
+    width: 600px;
+    height: auto;
+}
+.compProduct{
+    width: 650px;
+    height: auto;
+}
+.productList{
+    margin-top: 20px;
+    width: 600px;
+    height: auto;
+}
+.productItem{
+    width: 600px;
+    height: 60px;
+    border-width: 1px;
+    border-bottom-style: solid;
+    border-color: #F3F7F9;
+}
+.productLogoDiv{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    float: left;
+}
+.productLogo{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+.productInfor{
+    width: 500px;
+    height: 50px;
+    margin-left: 30px;
+    float: left;
+}
+.productInfor label{
+    font-weight: lighter;
+}
+.productIntroduce{
+    margin-left: 20px;
+}
+.compBussiness{
+    margin-top: 10px;
+    width: 650px;
+    height: auto;
+}
+.bussInfor{
+    margin-top: 15px;
+    width: 600px;
+    height: auto;
+}
+.bussInfor label{
+    font-weight: lighter;
+}
+#registerMoneyLabel{
+    margin-left: 150px;
+}
+#extendBussInfor{
+    float: right;
+    font-weight: lighter;
+}
+.seniorInforDiv{
+    width: 310px;
+    height: 200px;
+}
+.seniorInfor{
+    margin-top: 15px;
+    width: 310px;
+    height: 180px;
+}
+.seniorInforUp{
+    width: 310px;
+    height: 50px;
+}
+.seniorPhotoDiv{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    float: left;
+}
+.baseInforDiv{
+    width: 240px;
+    height: 50px;
+    float: right;
+}
+.baseInforDiv{
+    font-weight: lighter;
+}
+.seniorIntroduce{
+    margin-top: 10px;
+    width: 310px;
+    height: 120px;
+    overflow-y: scroll;
+}
+.seniorIntroduce::-webkit-scrollbar{
+    width: 5px;
+}
+.compPhoto{
+    width: 350px;
+    height: 250px;
+}
+.swiper-container{
+    width: 310px;
+    height: 200px;
+}
+.swiper-wrapper{
+    margin-top: 10px;
+    width: 310px;
+    height: 200px;
+}
+
+
+

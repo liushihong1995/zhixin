@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wyxeainn.mapper.JobMapper">
+    <insert id="insertJob" parameterType="Job">
+        insert into t_job (cate,cateId,name,city,zone,address,exp,edu,salary,detail,time,bossId,compId)
+        values (#{cate},#{cateId},#{name},#{city},#{zone},#{address},#{exp},#{edu},#{salary},#{detail},#{time},#{bossId},#{compId})
+    </insert>
+    <update id="updateJob" parameterType="Job">
+        update t_job set cate=#{cate},cateId=#{cateId},city=#{city},zone=#{zone},address=#{address},exp=#{exp},edu=#{edu},salary=#{salary},detail=#{detail} where id=#{id}
+    </update>
+    <delete id="deleteJob" parameterType="Integer">
+        delete from t_job where id=#{id}
+    </delete>
+    <select id="getOnePageJob" parameterType="Page" resultType="Job">
+        select * from t_job where bossId=#{bossId} and compId=#{compId} limit #{start},#{step}
+    </select>
+
+    <select id="getJobCount" parameterType="Page" resultType="Integer">
+        select count(*) from t_job where bossId=#{bossId} and compId=#{compId}
+    </select>
+
+    <select id="getJobById" parameterType="Integer" resultType="Job">
+        select * from t_job where id=#{id}
+    </select>
+
+    <resultMap id="ItemResultMap" type="Item">
+        <id column="jobId" property="jobId"></id>
+        <!-- 一对一-->
+        <association property="job" javaType="Job">
+            <result column="jobId" property="id"></result>
+            <result column="name" property="name"></result>
+            <result column="city" property="city"></result>
+            <result column="zone" property="zone"></result>
+            <result column="exp" property="exp"></result>
+            <result column="edu" property="edu"></result>
+            <result column="salary" property="salary"></result>
+            <result column="time" property="time"></result>
+        </association>
+
+        <association property="boss" javaType="Boss">
+            <result column="psrc" property="psrc"></result>
+            <result column="nickName" property="nickName"></result>
+            <result column="job" property="job"></result>
+        </association>
+
+        <association property="company" javaType="Company">
+            <result column="compId" property="id"></result>
+            <result column="shortName" property="shortName"></result>
+            <result column="industry" property="industry"></result>
+            <result column="stage" property="stage"></result>
+            <result column="scope" property="scope"></result>
+        </association>
+
+
+    </resultMap>
+
+    <select id="countJobByCondition" parameterType="Condition" resultType="Integer">
+        select count(*) from t_job job left join t_company comp on job.compId=comp.id left join t_boss boss on job.bossId=boss.id where(job.city like #{city} and job.zone like #{zone} and job.cate like #{category} and job.salary like #{salary} and job.exp like #{exp} and job.edu like #{edu} and comp.industry like #{industry} and comp.stage like #{stage} and comp.scope like #{scope} and (comp.fullName like #{compName} or comp.shortName like #{compName}))
+    </select>
+    <select id="selectJobByCondition" parameterType="Condition" resultMap="ItemResultMap">
+        select job.id as jobId,job.name,job.salary,job.exp,job.edu,job.time,job.city,job.zone,comp.id as compId,comp.shortName,comp.industry,comp.stage,comp.scope,boss.psrc,boss.nickName,boss.job from t_job job left join t_company comp on job.compId=comp.id left join t_boss boss on job.bossId=boss.id where(job.city like #{city} and job.zone like #{zone} and job.cate like #{category} and job.salary like #{salary} and job.exp like #{exp} and job.edu like #{edu} and comp.industry like #{industry} and comp.stage like #{stage} and comp.scope like #{scope} and (comp.fullName like #{compName} or comp.shortName like #{compName})) limit #{start},#{step}
+    </select>
+
+    <select id="countJobByCompId" parameterType="Integer" resultType="Integer">
+        select count(*) from t_job where compId=#{compId}
+    </select>
+
+    <select id="getHotJobByCompId" parameterType="Integer" resultType="Job">
+        select * from t_job where compId=#{compId} limit 0,3
+    </select>
+
+    <select id="getJobTypeByCompId" parameterType="Integer" resultType="String">
+        select cate from t_job where compId=#{compId}
+    </select>
+
+    <select id="getCountByJobType" parameterType="Condition" resultType="Integer">
+        select count(*) from t_job where (cate like #{category} and compId=#{compId})
+    </select>
+
+    <select id="getJobByCompAndType" parameterType="Condition" resultMap="ItemResultMap">
+         select job.id,job.name,job.salary,job.exp,job.edu,job.time,job.city,job.zone,boss.psrc,boss.nickName,boss.job from t_job job left join t_boss boss on job.bossId=boss.id where(job.cate like #{category} and job.compId=#{compId}) limit #{start},#{step}
+    </select>
+
+    <select id="countJobByCateId" parameterType="java.util.List" resultType="Integer">
+        select count(*) from t_job where cateId in <foreach collection="list" item="id" open="("  separator="," close=")">#{id}</foreach>
+    </select>
+
+    <update id="updateCateByCateId" parameterType="Industry">
+        update t_job set cate=#{third} where cateId=#{id}
+    </update>
+</mapper>

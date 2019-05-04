@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+.industry_manage_container{
+    width:1220px;
+    height:700px;
+}
+
+.industry_manage_div{
+    position: absolute;
+    width:1100px;
+    height: 600px;
+    margin-left: 100px;
+    margin-top: 30px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.industry_manage_div::-webkit-scrollbar{
+    width: 10px;
+}
+
+.first_class{
+    font-size: 15px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 50px;
+    width:180px;
+    height:90px;
+    background-color:#F3F7F9;
+    border-radius: 15px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.first_name{
+    margin-left: 17px;
+    margin-top: 32px;
+    font-size: 17px;
+    width:150px;
+    height:auto;
+    text-align: center;
+}
+
+#hidden_div{
+    position: absolute;
+    width:1220px;
+    height:700px;
+    background:rgba(0,0,0,0.5);
+    z-index: 5;
+    display: none;
+}
+
+#hidden_div_container{
+    margin-top: 100px;
+    margin-left: 300px;
+    width:600px;
+    height:400px;
+    background-color: #ffffff;
+}
+
+#hidden_div_first{
+    margin-top: 10px;
+    width:500px;
+    height:50px;
+    margin-left: 50px;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: #adadad;
+}
+
+#first_class_name{
+    margin-top: 15px;
+    font-size: 18px;
+    color: #5e5e5e;
+}
+
+#edit{
+    margin-left: 10px;
+}
+
+#trash{
+    margin-left: 10px;
+}
+
+#close{
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+#hidden_div_second{
+    margin-top: 30px;
+    margin-left: 40px;
+    width:520px;
+    height:270px;
+}
+
+#second_class{
+    float: left;
+    width:350px;
+    height:270px;
+    overflow-y: scroll;
+}
+
+#second_class::-webkit-scrollbar{
+    width: 5px;
+}
+
+.second_name{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #5e5e5e;
+    font-size: 15px;
+}
+
+.second_name:hover{
+    color: #5DD5C8;
+}
+
+#edit_second_class{
+    float: left;
+    width:170px;
+    height:270px;
+}
+
+
+#second_class_name{
+    margin-left: 15px;
+    font-size: 20px;
+    color: #5DD5C8;
+}
+
+#newName{
+    margin-top: 10px;
+    width:150px;
+    height:35px;
+    margin-left: 15px;
+}
+
+#updateBtn{
+    margin-top: 20px;
+    margin-left: 15px;
+    background-color: #5DD5C8;
+    color: #ffffff;
+}
+
+#deleteBtn{
+    margin-top: 20px;
+    margin-left: 15px;
+    background-color: #5DD5C8;
+    color: #ffffff;
+}

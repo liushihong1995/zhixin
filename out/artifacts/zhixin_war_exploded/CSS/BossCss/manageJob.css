@@ -1,0 +1,435 @@
+.manageJobHeader{
+    width: 100%;
+    height: 50px;
+    background-color: #0f0f0f;
+}
+
+.manageJobUp{
+    width: 100%;
+    height: 180px;
+    background-color: #444C5F;
+}
+
+.manageJobUpContent{
+    width: 1000px;
+    height: 180px;
+    background-color: #444C5F;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.boss_infor{
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 300px;
+    height: 100px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    float: left;
+}
+.comp_infor{
+    margin-top: 50px;
+    margin-right: 20px;
+    width: 500px;
+    height: 100px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    float: right;
+}
+.boss_infor_left{
+    width: 110px;
+    height: 100px;
+    border-radius: 10px;
+    float: left;
+}
+.boss_infor_right{
+    width: 120px;
+    height: 100px;
+    margin-left: 20px;
+    float: left;
+}
+.boss_infor_right label{
+    font-weight: lighter;
+    color: #ffffff;
+    font-size: 15px;
+}
+#bossPhoto{
+    border-radius: 10px;
+}
+#bossName{
+    width: 120px;
+    font-size: 28px;
+}
+#bossJob{
+    width: 120px;
+    margin-top: 6px;
+}
+#bossEmail{
+    width: 120px;
+    margin-top: 6px;
+}
+.comp_infor_left{
+    width: 390px;
+    height: 100px;
+    float: left;
+}
+.comp_infor_right{
+    width: 100px;
+    height: 100px;
+    float: right;
+    border-radius: 10px;
+}
+.comp_infor label{
+    font-weight: lighter;
+    font-size: 15px;
+    color: #ffffff;
+    float: right;
+    margin-right: 20px;
+}
+#compShort{
+    width: 300px;
+    height: 40px;
+    text-align: right;
+    font-size: 28px;
+}
+#compWeb{
+    margin-top: 5px;
+}
+#compLogo{
+    border-radius: 10px;
+}
+.manageJobMid{
+    width: 100%;
+    height: 800px;
+    background-color: #F6F6F8;
+}
+.manageJobContent{
+    width: 1000px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+}
+.content_up{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 900px;
+    height: 50px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: #F6F6F8;
+}
+
+.glyphicon-stop{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #d9534f;
+}
+#jobListLabel{
+    margin-left: 5px;
+    margin-top: -5px;
+    font-size: 20px;
+    color: #5e5e5e;
+}
+#editJob{
+    margin-left: 650px;
+    width: 100px;
+    background-color: #5DD5C8;
+    color: #ffffff;
+}
+.content_mid{
+    position: absolute;
+    width: 900px;
+    height: 600px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
+}
+
+tr{
+   height: 30px;
+}
+th{
+    font-size: 15px;
+    font-weight: normal;
+    border-width: 1px;
+    border-color: #a6e1ec;
+    border-style: solid;
+    text-align: center;
+}
+td{
+    border-width: 1px;
+    border-color: #a6e1ec;
+    border-style: solid;
+    font-size: 13px;
+    text-align: center;
+}
+.jobId{
+    width: 100px;
+}
+.jobName{
+    width: 200px;
+}
+.jobType{
+    width: 150px;
+}
+.jobEdu{
+    width: 100px;
+}
+.jobSalary{
+    width: 100px;
+}
+.jobExp{
+    width: 100px;
+}
+.jobOp{
+    width: 100px;
+}
+
+.page{
+    margin-top: 50px;
+    width: 900px;
+    height: 60px;
+    text-align: center;
+}
+
+.edit_job{
+    width: 900px;
+    height: 470px;
+    background-color: #F6F6F8;
+    display: none;
+}
+.edit_job label{
+    font-weight: lighter;
+    color: #5e5e5e;
+    font-size: 15px;
+}
+.infor_item{
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 400px;
+    height: 70px;
+    float: left;
+}
+.infor_item input{
+    width: 350px;
+    height: 35px;
+}
+.infor_item select{
+    width: 350px;
+    height: 35px;
+}
+.salary_range{
+    margin-top: 10px;
+    width: 400px;
+    height: 70px;
+    margin-left: 50px;
+    float: left;
+}
+.salary_range input{
+    width: 150px;
+    height: 35px;
+}
+#salaryDownInput{
+    margin-right: 15px;
+}
+#salaryUpInput{
+    margin-left: 15px;
+}
+.workCity{
+    margin-top: 10px;
+    width: 400px;
+    height: 70px;
+    margin-left: 50px;
+    float: left;
+    overflow: visible;
+}
+.city{
+    width: 190px;
+    height: 70px;
+    float: left;
+    overflow: visible;
+}
+#jobCityInput{
+    width: 165px;
+    height: 35px;
+}
+.zone{
+    width: 190px;
+    height: 70px;
+    float: left;
+}
+#zoneSelect{
+    margin-left: -5px;
+    margin-top: 5px;
+    width: 165px;
+    height: 35px;
+}
+.wordAddress{
+    position: absolute;
+    width: 800px;
+    height: 70px;
+    margin-left: 50px;
+    margin-top: 240px;
+}
+#jobAddress{
+    width: 800px;
+    height: 35px;
+}
+.jobDetail{
+    position: absolute;
+    width: 800px;
+    height: 100px;
+    margin-top: 310px;
+    margin-left: 50px;
+}
+#detailInput{
+    width: 800px;
+    height: 60px;
+}
+.opJobDiv{
+    position: absolute;
+    width: 800px;
+    height: 50px;
+    margin-top: 420px;
+    margin-left: 50px;
+}
+#cancel{
+    width: 60px;
+    height: 35px;
+    background-color: #5DD5C8;
+    color: #ffffff;
+    margin-left: 630px;
+}
+#createJob{
+    width: 60px;
+    height: 35px;
+    background-color: #5DD5C8;
+    color: #ffffff;
+    margin-left: 30px;
+}
+
+.hiddenDiv{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.5);
+    z-index: 10;
+    display: none;
+}
+.hiddenDiv label{
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.hiddenDiv label:hover{
+    color: #5DD5C8;
+}
+
+.categoryDiv{
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 500px;
+    background-color: #ffffff;
+    display: none;
+}
+
+#closeCategory {
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 620px;
+    font-size: 16px;
+}
+
+.category_down{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 60px;
+    width: 750px;
+    height: 410px;
+}
+
+.cate_first_list{
+    width: 150px;
+    height: 410px;
+    float: left;
+    background-color:#F3F7F9;
+    overflow-y: scroll;
+}
+.cate_first_item{
+    margin-top: 10px;
+    width: 130px;
+    height: 35px;
+}
+.cate_first_item label{
+    width: 100px;
+    margin-left: 30px;
+}
+.cate_first_item:hover{
+    background-color:#ffffff;
+}
+.cate_second{
+    margin-left: 40px;
+    width: 530px;
+    height: 410px;
+    float: left;
+}
+.cate_third{
+    margin-left: 40px;
+    width: 530px;
+    height: 410px;
+    float: left;
+    display: none;
+}
+.cate_second_header{
+    width: 530px;
+}
+.cate_third_header{
+    width: 530px;
+}
+.cate_second_list{
+    width:530px;
+}
+.cate_third_list{
+    width: 530px;
+}
+.cate_second label{
+    margin-top: 10px;
+    width: 170px;
+    height: 30px;
+}
+.cate_third label{
+    margin-top: 10px;
+    width: 170px;
+    height: 30px;
+}
+.industry_up{
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 20px;
+    width: 750px;
+    height: 25px;
+}
+
+.cityList{
+    position: absolute;
+    width: 165px;
+    height: 60px;
+    z-index: 15;
+    overflow-y: scroll;
+    display: none;
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #5e5e5e;
+    border-width: 1px;
+}
+.cityList::-webkit-scrollbar{
+    width: 5px;
+}
+.cityList li {
+    list-style-type: none;
+   text-align: center;
+}

@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+.setAccountHeader{
+    width: 100%;
+    height: 50px;
+    background-color: #0f0f0f;
+}
+
+.setAccountContainer{
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    background-color: #F3F7F9;
+}
+
+.setAccountContent{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 600px;
+}
+
+.list_left{
+    width: 230px;
+    height: 500px;
+    background-color: #ffffff;
+    border-right-style: dotted;
+    border-color: #adadad;
+    border-width: 1px;
+    float: left;
+}
+
+
+.list_item{
+    width: 230px;
+    height: 60px;
+    border-bottom-style: dotted;
+    border-color: #adadad;
+    border-width: 1px;
+}
+.list_item a {
+    text-decoration: none;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 85px;
+    font-size: 16px;
+    color: #5e5e5e;
+}
+
+.content{
+    width: 760px;
+    height: 500px;
+    float: right;
+    background-color: #ffffff;
+}
+
+

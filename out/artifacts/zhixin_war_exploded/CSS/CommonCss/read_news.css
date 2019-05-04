@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.read_new_container{
+    width:100%;
+    height:auto;
+    background-color: #F6F6F8;
+}
+
+/*头部*/
+.read_new_up{
+    width:100%;
+    height:65px;
+    background-color: #ffffff;
+}
+
+/*下部*/
+.read_new_down{
+    width:100%;
+    height: auto;
+    background-color:#F6F6F8;
+}
+
+.new_item{
+    margin-top: 20px;
+    width:1200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F6F6F8;
+
+}
+
+/*一条新闻
+*/
+.a_new{
+    float: left;
+    width:950px;
+    height: auto;
+    background-color: #ffffff;
+}
+
+/*新闻标题*/
+.new_title {
+    width: 950px;
+    height: 100px;
+}
+
+#title{
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 50px;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.new_infor{
+    width:950px;
+    height:50px;
+}
+
+#new_type{
+    position: absolute;
+    font-size: 15px;
+    color: #555555;
+    margin-left: 50px;
+    font-weight: normal;
+}
+
+#new_author{
+    position: absolute;
+    font-size: 15px;
+    color: #555555;
+    margin-left: 780px;
+    font-weight: normal;
+}
+
+.new_content{
+    width:850px;
+    margin-left: 50px;
+    height: auto;
+    min-height: 600px;
+    font-size: 15px;
+}
+
+/*热门新闻*/
+.top_news{
+    float: right;
+    width:230px;
+    height:auto;
+    background-color: #ffffff;
+}
+
+.top_news_up{
+    width:230px;
+    height:80px;
+}
+
+#sign{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 30px;
+    width:5px;
+    height:25px;
+    background-color: #5DD5C8;
+}
+.top_news_up>label{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 50px;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.top_new_item{
+    margin-left: 30px;
+    margin-top: 20px;
+    width:180px;
+    height: auto;
+    border-bottom-style: solid;
+    border-bottom-color: #adadad;
+    border-bottom-width: 1px;
+}
+
+.top_new_item>a{
+    text-decoration: none;
+    font-size: 22px;
+    color: #555555;
+}
+
+.top_new_item>a:hover{
+    text-decoration: none;
+    color: #5DD5C8;
+}
+
+#top_new_type{
+    margin-top: 30px;
+    font-size: 13px;
+    color: #adadad;
+    font-weight: normal;
+}
+
+#top_new_author{
+    margin-top: 30px;
+    margin-left: 65px;
+    font-size: 13px;
+    color: #adadad;
+    font-weight: normal;
+}
+
+#blank_div{
+    width:230px;
+    height:60px;
+}

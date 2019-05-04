@@ -1,0 +1,74 @@
+@charset "UTF-8";
+.edit_article_header{
+    width: 100%;
+    height: 50px;
+    background-color: #0f0f0f;
+}
+
+.edit_article{
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    background-color: #F3F7F9;
+}
+.edit_article_content{
+    margin-top: 50px;
+    width: 800px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+}
+#type_select{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 50px;
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
+    color: #5e5e5e;
+}
+#titleInput{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 160px;
+    width: 590px;
+    height: 50px;
+    font-size: 20px;
+}
+#contentInput{
+    margin-top: 80px;
+    width: 700px;
+    height: 500px;
+    margin-left: 50px;
+}
+/*设置编辑器的高度*/
+.w-e-text-container{
+    height: 500px !important;
+}
+
+.operateArticle{
+    margin-top: 30px;
+    width: 800px;
+    height: 100px;
+    background-color: #ffffff;
+}
+
+#cancel{
+    margin-top: 30px;
+    width: 100px;
+    height: 40px;
+    background-color: #5DD5C8;
+    color: #ffffff;
+    margin-left: 490px;
+}
+#publish{
+    margin-top: 30px;
+    width: 100px;
+    height: 40px;
+    background-color: #5DD5C8;
+    color: #ffffff;
+    margin-left: 50px;
+}
+
+

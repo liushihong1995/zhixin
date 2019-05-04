@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+.create_admin_container{
+    position: absolute;
+    margin-left:100px;
+    width:1000px;
+    height:700px;
+    background-color: #ffffff;
+}
+
+.leftLabel {
+    margin-left:150px;
+    font-size: 20px;
+    color: #20242c;
+}
+
+.rightLabel{
+    margin-left:400px;
+    font-size: 20px;
+    color: #20242c;
+}
+
+.leftText{
+    margin-left:150px;
+    width:330px;
+    height:50px;
+    font-size: 20px;
+}
+
+.rightText{
+    margin-left:150px;
+    width:330px;
+    height:50px;
+    font-size: 20px;
+}
+
+.form-group{
+    margin-top: 20px;
+}
+
+.btn-default{
+    width:140px;
+    height:50px;
+    background-color: #1ab394;
+    color:#FFFFFF;
+    font-size: 20px;
+}
+
+#resetBtn{
+    margin-left:630px;
+}
+
+#createBtn{
+    margin-left:50px;
+}
+
+#create_admin_title{
+    margin-top:30px;
+    margin-left:150px;
+}
+
+.glyphicon-ok{
+    color: #5bc0de;
+    font-size:18px;
+    display: none;
+}
+
+.glyphicon-remove{
+    color: #d9534f;
+    font-size: 18px;
+    display: none;
+}

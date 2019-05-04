@@ -1,0 +1,177 @@
+
+.jobDetailHeader{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+.jobDetailUp{
+    width: 100%;
+    height: 150px;
+    background-color: #444C5F;
+}
+.jobInforDiv{
+    width: 1000px;
+    height: 150px;
+    background-color: #444C5F;
+    margin-left: auto;
+    margin-right: auto;
+}
+#jobName{
+    margin-left: 10px;
+    margin-top: 40px;
+    font-size: 25px;
+    color: #ffffff;
+}
+#jobCity{
+    margin-top: 5px;
+    margin-left: 10px;
+    color: #ffffff;
+    font-size: 15px;
+}
+#jobExp{
+    color: #ffffff;
+    font-size: 15px;
+    margin-left: 10px;
+}
+#jobEdu{
+    margin-left: 10px;
+    color: #ffffff;
+    font-size: 15px;
+}
+#jobSalary{
+    margin-left: 20px;
+    font-size: 20px;
+    color: lightcoral;
+}
+.jobDetailMid{
+    width: 100%;
+    height: auto;
+}
+.jobDetailMidContent{
+    width: 1000px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.jobDetailMidLeft{
+    width: 690px;
+    height: auto;
+    float: left;
+    border-width: 1px;
+    border-right-style: solid;
+    border-color: #F2F5FA;
+}
+.bossInfor{
+    width: 690px;
+    height: 100px;
+}
+.bossPhoto{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 30px;
+    float: left;
+}
+.bossNameDiv{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    margin-left: 80px;
+    margin-top: 30px;
+    float: left;
+}
+.sendCvHint{
+    position: absolute;
+    width: 400px;
+    height: 50px;
+    margin-left: 230px;
+    margin-top: 35px;
+    float: right;
+    color: #5e5e5e;
+}
+#bossName{
+    margin-top: 2px;
+    font-size: 17px;
+}
+.jobDetailMidRight{
+    width: 290px;
+    height: auto;
+    float: right;
+}
+.jobDescriptionDiv{
+    width: 690px;
+    height: auto;
+}
+.title{
+    position: absolute;
+    width: 600px;
+    height: 30px;
+}
+.description{
+    width: 650px;
+    color: #5e5e5e;
+    height: auto;
+}
+.bussinessInfor{
+    margin-top: 20px;
+    width: 690px;
+    height: 120px;
+}
+.bussiness label{
+    font-weight: lighter;
+}
+.compLabel{
+    margin-left: 30px;
+}
+.compInfor{
+    margin-top: 30px;
+    width: 290px;
+    height: 100px;
+}
+
+.baseInfor{
+    margin-top: 10px;
+    width: 290px;
+    height: 100px;
+}
+.baseInfor label{
+    margin-top: 5px;
+    font-weight: lighter;
+}
+.rightTitle{
+    width: 290px;
+    height: 30px;
+}
+
+#compName{
+    margin-top: 5px;
+    font-weight: lighter;
+    font-size: 15px;
+    color: #5e5e5e;
+    text-decoration: none;
+}
+#compName:hover{
+    color: #5DD5C8;
+    text-decoration: none;
+}
+.compIntroduce{
+    margin-top: 100px;
+    width: 290px;
+    height: 200px;
+}
+.introduce{
+    width: 290px;
+    height: 150px;
+    color: #5e5e5e;
+    overflow-y: scroll;
+}
+.introduce::-webkit-scrollbar{
+    width: 5px;
+}
+
+.jobDetailFooter{
+    width: 100%;
+    height: 350px;
+    background-color: #F6F6F8;
+}

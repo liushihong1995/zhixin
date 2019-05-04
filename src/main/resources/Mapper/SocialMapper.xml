@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wyxeainn.mapper.SocialMapper">
+    <select id="selectSocialByUserId" parameterType="Integer" resultType="Social">
+        select * from t_social where userId=#{userId}
+    </select>
+    <insert id="insertSocial" parameterType="Social">
+        <selectKey keyProperty="id" resultType="Integer" order="AFTER">
+            select LAST_INSERT_ID();
+        </selectKey>
+        insert into t_social (userId,url) values(#{userId},#{url})
+    </insert>
+    <update id="updateSocial" parameterType="Social">
+        update t_social set url=#{url} where id=#{id};
+    </update>
+
+</mapper>

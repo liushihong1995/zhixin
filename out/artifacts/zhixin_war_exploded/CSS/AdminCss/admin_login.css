@@ -1,0 +1,126 @@
+@CHARSET "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+.admin_login_container{
+    position: absolute;
+    width:100vw;
+    height:100vh;
+    background-color: #e5e5e5;
+    z-index: 0;
+}
+
+.admin_login_up {
+    position:absolute;
+    width: 100vw;
+    height: 50vh;
+    background-color:#00635a;
+    z-index: 1;
+}
+
+.admin_login_down{
+    position: absolute;
+    margin-top:50vh;
+    width: 100vw;
+    background-color: #e5e5e5;
+    z-index: 1;
+}
+
+h1{
+    position: absolute;
+    margin-top:10vh;
+    margin-left:45vw;
+    margin-bottom: 5vh;
+    color:#FFFFFF;
+    font-size: 3vw;
+    font-family: sans-serif;
+    z-index: 2;
+}
+
+.admin_login {
+    position: absolute;
+    margin-top: 20vh;
+    margin-left: 35vw;
+    width:30vw;
+    height:63vh;
+    background-color:#ffffff;
+    z-index: 3;
+}
+
+.login_up {
+    position: absolute;
+    margin:0 0 0 0;
+    width:30vw;
+    height:12vh;
+}
+
+h2{
+    position: absolute;
+    margin-left:10vw;
+    margin-top:5vh;
+    font-size: 2vw;
+}
+
+.login_down{
+    position: absolute;
+    margin-top: 10vh;
+    width:30vw;
+    height:53vh;
+}
+
+
+#name_block{
+    position: absolute;
+    margin-top: 1vh;
+    margin-left: 5vw;
+    width:20vw;
+    height:10vh;
+    font-size: 1vw;
+}
+
+#pass_block{
+    position: absolute;
+    margin-top: 14vh;
+    margin-left: 5vw;
+    width:20vw;
+    height:10vh;
+    font-size: 1vw;
+}
+
+#username{
+    width:20vw;
+    height:6vh;
+    font-size: 1vw;
+}
+
+#password{
+    width:20vw;
+    height:6vh;
+    font-size: 1vw;
+}
+.btn-default {
+    position: absolute;
+    margin-top:30vh;
+    margin-left:5vw;
+    width:20vw;
+    height:7vh;
+    background-color: #00635a;
+    color: #ffffff;
+    font-size: 1vw;
+}
+
+.glyphicon-log-in {
+    color:#ffffff;
+    font-size: 1vw;
+}
+
+.btn-default:hover {
+    background-color: #67b168;
+}

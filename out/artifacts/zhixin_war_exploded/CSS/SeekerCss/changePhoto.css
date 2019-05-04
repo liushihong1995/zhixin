@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+.changePhotoContainer{
+    width: 750px;
+    height: 500px;
+}
+
+/*上传图片的容器*/
+.img-container{
+    margin-top: 40px;
+    margin-left: 50px;
+    width:400px;
+    height:240px;
+    float: left;
+    background-color: #dca7a7;
+}
+
+/*按钮组模块样式*/
+.functionButton{
+    position: absolute;
+    margin-left:500px;
+    margin-top: 30px;
+    width:200px;
+    height:300px;
+}
+
+.btn-group{
+    margin-top: 15px;
+}
+
+#dataWidth {
+    width:100px;
+    height:30px;
+    background-color: #dca7a7;
+}
+
+#dataHeight{
+    width:100px;
+    height:30px;
+    background-color: #dca7a7;
+}

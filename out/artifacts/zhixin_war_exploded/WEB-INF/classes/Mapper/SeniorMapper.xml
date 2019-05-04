@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wyxeainn.mapper.SeniorMapper">
+    <select id="getSeniors" parameterType="Senior" resultType="Senior">
+        select * from t_senior where compId=#{compId} and bossId=#{bossId}
+    </select>
+    <select id="getSeniorById" parameterType="Integer" resultType="Senior">
+        select * from t_senior where id=#{id}
+    </select>
+    <select id="insertSenior" parameterType="Senior">
+        insert into t_senior (name,job,compId,introduce,bossId,psrc) values (#{name},#{job},#{compId},#{introduce},#{bossId},#{psrc})
+    </select>
+    <select id="updateSenior" parameterType="Senior">
+        update t_senior set name=#{name},job=#{job},compId=#{compId},introduce=#{introduce},bossId=#{bossId},psrc=#{psrc} where id=#{id}
+    </select>
+    <select id="getSeniorByCompId" parameterType="Integer" resultType="Senior">
+        select * from t_senior where compId=#{compId}
+    </select>
+</mapper>

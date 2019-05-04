@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+.compDetailHeader{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+.compDetailMid{
+    width: 100%;
+    height: 180px;
+    background-color: #444C5F;
+}
+.compInforDiv{
+    width: 1000px;
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.compInforLeft{
+    width: 500px;
+    height: 180px;
+    margin-left: 10px;
+    float: left;
+}
+.compInforRight{
+    width: 450px;
+    height: 180px;
+    float: right;
+}
+.compInforRight label{
+    color: #ffffff;
+}
+.compLogoDiv{
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    float: left;
+}
+
+#compLogo{
+    border-radius: 10px;
+}
+
+.compInfor{
+    width: 400px;
+    height: 110px;
+    margin-top: 30px;
+    float: left;
+}
+#compShortName{
+    width: 350px;
+    font-size: 25px;
+    color: #ffffff;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+#compStage{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #ffffff;
+}
+#compScope{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #ffffff;
+}
+#compIndustry{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #ffffff;
+}
+.chosePage{
+    width: 500px;
+    height: 50px;
+}
+.chosePage label{
+    color: #ffffff;
+    font-size: 15px;
+}
+#showCompInfor{
+    margin-top: 10px;
+}
+#showRecruitJob{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+#jobNumber{
+    width: 100px;
+    margin-left: 120px;
+    margin-top: 30px;
+    font-size: 25px;
+}
+#bossNumber{
+    width: 100px;
+    margin-left: 50px;
+    margin-top: 30px;
+    font-size: 25px;
+}
+#jobNumberLabel{
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 120px;
+    font-size: 25px;
+}
+#bossNumberLabel{
+    width: 120px;
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+.compDetailFooter{
+    width: 100%;
+    height: 350px;
+    background-color: #F6F6F8;
+}

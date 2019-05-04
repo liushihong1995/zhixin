@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wyxeainn.mapper.ProductMapper">
+    <insert id="insertProduct" parameterType="Product">
+        insert into t_product (name,slogan,url,compId,bossId,logo) values (#{name},#{slogan},#{url},#{compId},#{bossId},#{logo})
+    </insert>
+    <select id="getProductById" parameterType="Integer" resultType="Product">
+        select * from t_product where id=#{id}
+    </select>
+    <update id="updateProduct" parameterType="Product">
+        update t_product set name=#{name},slogan=#{slogan},url=#{url},compId=#{compId},bossId=#{bossId},logo=#{logo} where id=#{id}
+    </update>
+    <select id="getProducts" parameterType="Product" resultType="Product">
+        select * from t_product where compId=#{compId} and bossId=#{bossId}
+    </select>
+    <select id="getProductsByCompId" parameterType="Integer" resultType="Product">
+        select * from t_product where compId=#{compId}
+    </select>
+</mapper>

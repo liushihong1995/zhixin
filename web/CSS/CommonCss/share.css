@@ -1,0 +1,274 @@
+@charset "UTF-8";
+
+.share_header{
+    width: 100%;
+    height: 50px;
+    background-color: #0f0f0f;
+}
+
+.share_middle{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background-color: #F3F7F9;
+}
+.share_content{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: auto;
+    background-color:#ffffff;
+}
+.share_content_left{
+    width: 700px;
+    height: auto;
+    float: left;
+    background-color: #ffffff;
+}
+.share_content_right {
+    width: 290px;
+    height: 800px;
+    float: right;
+    background-color: #ffffff;
+}
+
+.share_and_help_div{
+    width: 700px;
+    height: 60px;
+    background-color: #ffffff;
+}
+.glyphicon-stop{
+    color: #d9534f;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#share_and_help_label{
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 16px;
+    font-size: 18px;
+    color: #5e5e5e;
+}
+#edit_article{
+    margin-top: 15px;
+    float: right;
+    margin-right: 20px;
+    background-color: #5DD5C8;
+    color: #ffffff;
+}
+.share_type{
+    width: 700px;
+    height: 50px;
+    border-color: #F3F7F9;
+    border-width: 1px;
+    border-bottom-style: solid;
+}
+.share_type_left{
+    width: 85px;
+    height: 50px;
+    float: left;
+}
+.share_type_left label{
+    font-weight: normal;
+    margin-left: 20px;
+    height: 25px;
+    margin-top: 15px;
+    text-align: center;
+}
+.share_type_right{
+    width: 610px;
+    height: 50px;
+    float: right;
+}
+.share_type_right label{
+    font-weight: normal;
+    margin-left: 10px;
+    height: 25px;
+    margin-top: 15px;
+    text-align: center;
+    width: 65px;
+    border-radius: 5px;
+}
+.article_list{
+    width: 700px;
+    height: auto;
+    background-color: #ffffff;
+}
+.article_item{
+    margin-left: 20px;
+    margin-top: 8px;
+    width: 660px;
+    height: 70px;
+    border-bottom-style: solid;
+    border-color: #F3F7F9;
+    border-width: 1px;
+}
+.article_item:hover{
+    background-color: #F5FFFA;
+}
+.userPhoto{
+    width: 60px;
+    height: 70px;
+    float: left;
+}
+.userImage{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.article_infor{
+    width: 600px;
+    height: 70px;
+    float: left;
+}
+.article_infor label:hover{
+    color: #5DD5C8;
+}
+.article_title_div{
+    width: 600px;
+    height: 35px;
+}
+.article_title{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 15px;
+    color: #5e5e5e;
+    text-decoration: none;
+}
+.article_title:hover{
+    text-decoration: none;
+    color: #5DD5C8;
+}
+.article_other_infor{
+    width: 600px;
+    height: 35px;
+}
+.article_other_infor label{
+    font-size: 12px;
+    font-weight: normal;
+    color: #5e5e5e;
+}
+.userName{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 7px;
+    text-decoration: none;
+    color: #5e5e5e;
+    font-size: 12px;
+}
+.pubTime{
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 7px;
+}
+.staticLabel{
+    position: absolute;
+    margin-left: 190px;
+    margin-top: 7px;
+}
+.articeType{
+    position: absolute;
+    margin-left: 230px;
+    margin-top: 7px;
+}
+.replyCountLabel{
+    position: absolute;
+    margin-left: 450px;
+    margin-top: 7px;
+}
+.replyCount{
+    position: absolute;
+    margin-left: 485px;
+    margin-top: 7px;
+}
+.visitCountLabel{
+    position: absolute;
+    margin-left: 520px;
+    margin-top: 7px;
+}
+.visitCount{
+    position: absolute;
+    margin-left: 550px;
+    margin-top:7px;
+}
+
+.hot_div_header{
+    margin-left: 10px;
+    width: 270px;
+    height: 60px;
+    background-color: #ffffff;
+}
+#hotTitle{
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 16px;
+    font-size: 18px;
+    color: #5e5e5e;
+}
+.hot_list{
+    width: 290px;
+    height: auto;
+}
+.hot_item{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 270px;
+    height: 80px;
+    background-color: #ffffff;
+    border-width: 1px;
+    border-color:#F3F7F9;
+    border-bottom-style: solid;
+}
+.hot_item:hover{
+    background-color: #F5FFFA;
+}
+.hot_title_div{
+    margin-left: 10px;
+    width: 260px;
+    height: 40px;
+}
+.hot_title{
+    position: absolute;
+    margin-top: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #5e5e5e;
+}
+.hot_infor{
+    margin-left: 10px;
+    width: 260px;
+    height: 40px;
+}
+.hot_infor label{
+    font-size: 13px;
+    color: #5e5e5e;
+    font-weight: normal;
+}
+.hotStaticLabel{
+    position: absolute;
+    margin-top: 10px;
+}
+.hotPubTime{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.hotReplyLabel{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 190px;
+}
+.hotReply{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 220px;
+}
+
+.page{
+    width: 700px;
+    height: 50px;
+    background-color: #ffffff;
+    text-align: center;
+}
+

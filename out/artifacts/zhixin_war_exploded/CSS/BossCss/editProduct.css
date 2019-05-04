@@ -1,0 +1,62 @@
+.editProductContainer{
+    width: 790px;
+    height: 500px;
+}
+
+.productLogoDiv{
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 250px;
+    height: 300px;
+    float: left;
+}
+.productLogoDiv label{
+    font-weight: lighter;
+}
+
+#show_cover{
+    width: 210px;
+    height: 210px;
+}
+
+#changeLogo{
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.productInforDiv{
+    margin-top: 50px;
+    width: 400px;
+    height: 400px;
+    float: left;
+}
+.itemInfor{
+    width: 400px;
+    height: 60px;
+}
+.productInforDiv label{
+    font-weight: normal;
+    color: #5e5e5e;
+}
+
+.productInforDiv input{
+    width: 280px;
+    height: 35px;
+}
+.operateDiv{
+    width: 400px;
+    height: 50px;
+}
+
+#cancel{
+    margin-left: 200px;
+    margin-top: 10px;
+    background-color: #5DD5C8;
+    color: #ffffff;
+}
+#productInforSubmit{
+    margin-left: 30px;
+    margin-top: 10px;
+    background-color: #5DD5C8;
+    color: #ffffff;
+}

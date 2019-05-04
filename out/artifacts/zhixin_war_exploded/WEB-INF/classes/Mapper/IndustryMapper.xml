@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wyxeainn.mapper.IndustryMapper">
+    <!-- 从Industry表中查询全部 -->
+    <select id="selectFromIndustry" resultType="Industry">
+        select * from t_industry
+    </select>
+
+    <insert id="insertFirst" parameterType="Industry">
+        insert into t_industry set first=#{first},second=#{second}
+    </insert>
+
+    <select id="getSecond" parameterType="String" resultType="String">
+        select second from t_industry where first=#{first} and second!="default"
+    </select>
+
+    <select id="selectFromCategory" resultType="Industry">
+        select * from t_category
+    </select>
+
+    <insert id="insertCatetory" parameterType="Industry">
+        insert into t_category set simple=#{simple},first=#{first},second=#{second},third=#{third}
+    </insert>
+    <select id="getSecondIndustryById" parameterType="Integer" resultType="String">
+        select second from t_industry where id=#{id}
+    </select>
+    <select id="getThirdCateById" parameterType="Integer" resultType="String">
+        select third from t_category where id=#{id}
+    </select>
+
+    <select id="getIdByIndustryFirst" parameterType="String" resultType="Integer">
+        select id from t_industry where first=#{first}
+    </select>
+
+    <delete id="deleteByIdList" parameterType="java.util.List">
+        delete from t_industry where id in <foreach collection="list" item="id" open="("  separator="," close=")">#{id}</foreach>
+    </delete>
+
+    <update id="updateFirstByIdList">
+        update t_industry set first=#{qv.first} where id in <foreach collection="qv.idList" item="id" open="("  separator="," close=")">#{id}</foreach>
+    </update>
+
+    <update id="updateSimpleAndFirstByIdList">
+        update t_category set simple=#{qv.simple},first=#{qv.first} where id in <foreach collection="qv.idList" item="id" open="("  separator="," close=")">#{id}</foreach>
+    </update>
+
+    <update id="updateCateSecondByIdList">
+        update t_category set second=#{qv.second} where id in <foreach collection="qv.idList" item="id" open="("  separator="," close=")">#{id}</foreach>
+    </update>
+
+    <select id="getIdByFirstAndSecond" parameterType="Industry" resultType="Integer">
+        select id from t_industry where first=#{first} and second=#{second}
+    </select>
+
+    <update id="updateSecondById" parameterType="Industry">
+        update t_industry set second=#{second} where id=#{id}
+    </update>
+
+
+    <select id="getIdByCateSimple" parameterType="String" resultType="Integer">
+        select id from t_category where simple=#{simple}
+    </select>
+
+    <delete id="deleteCateFirstByIdList" parameterType="java.util.List">
+        delete from t_category where id in <foreach collection="list" item="id" open="("  separator="," close=")">#{id}</foreach>
+    </delete>
+
+    <select id="getIdByCateSimpleAndSecond" parameterType="Industry" resultType="Integer">
+        select id from t_category where simple=#{simple} and second=#{second}
+    </select>
+
+    <select id="getIdByAllInfor" parameterType="Industry" resultType="Integer">
+        select id from t_category where simple=#{simple} and second=#{second} and third=#{third}
+    </select>
+
+    <select id="updateCateThirdById" parameterType="Industry">
+        update t_category set third=#{third} where id=#{id}
+    </select>
+
+</mapper>

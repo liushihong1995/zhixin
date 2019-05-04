@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*用户协议界面上部*/
+.user_protocal_up {
+    width:100%;
+    height:50px;
+    background-color: #0f0f0f;
+}
+
+.user_protocal_container{
+    position: absolute;
+    width:100%;
+    height:700px;
+}
+
+/*用户协议部分*/
+.user_protocal{
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width:1000px;
+    height:auto;
+}
+
+.user_protocal_title{
+    width:1000px;
+    height:150px;
+    background-color: #ffffff;
+}
+
+.user_protocal_title>h2{
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 300px;
+}
+
+/*用户协议内容*/
+.user_protocal_content{
+    margin-left: auto;
+    margin-top: auto;
+    width:1000px;
+    height:auto;
+    background-color: #ffffff;
+}
+
+.user_protocal_down{
+    width:1000px;
+    height:auto;
+    margin-top: 6300px;
+    margin-left: auto;
+    margin-right: auto;
+}

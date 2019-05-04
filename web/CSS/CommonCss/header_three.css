@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header_container{
+    margin-left: auto;
+    margin-right: auto;
+    width:900px;
+    height:50px;
+    background-color: #0f0f0f;
+}
+
+.title{
+    position: absolute;
+    float: left;
+    width:100px;
+    height:50px;
+}
+
+#website_name{
+    text-decoration: none;
+    position: absolute;
+    margin-top: 5px;
+    color: #5DD5C8;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/*导航栏的样式*/
+.daohang{
+    float: left;
+    margin-left: 100px;
+    width:300px;
+    height:50px;
+}
+
+.daohang>a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+.daohang>a:hover{
+    color: #5DD5C8;
+}
+
+/*首页*/
+#home_page{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+/*求职*/
+#seek_job{
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 15px;
+}
+
+/*分享*/
+#share_infor{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 170px;
+}
+
+/*资讯*/
+#web_news{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 240px;
+}
+
+/*用户头像*/
+.user_photo{
+    margin-left: 600px;
+    width:300px;
+    height:50px;
+}
+
+.user_photo>a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.user_photo>a:hover{
+    color: #5DD5C8;
+}
+/*消息*/
+#message{
+    position: absolute;
+    margin-top: 15px;
+}
+/*简历*/
+#cv{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 80px;
+}
+/*用户名*/
+#sname{
+    position: absolute;
+    margin-top: 15px;
+    width: 120px;
+    margin-left: 120px;
+    text-align: center;
+}
+/*用户头像*/
+#seekerPhoto{
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 250px;
+}
+
+/*登录或注册样式*/
+.login_or_register{
+    margin-left: 700px;
+    width:200px;
+    height:50px;
+}
+
+#user_login{
+    margin-left: 40px;
+    margin-top: 10px;
+    width:60px;
+    height:30px;
+    background-color: #0f0f0f;
+    border-color: #5DD5C8;
+    color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#user_register{
+    margin-top: 10px;
+    margin-left: 20px;
+    width:60px;
+    height:30px;
+    background-color: #0f0f0f;
+    border-color: #5DD5C8;
+    color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#user_login:hover{
+    color: #5DD5C8;
+}
+
+#user_register:hover{
+    color: #5DD5C8;
+}
+

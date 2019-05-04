@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+    <!-- 开启注解驱动 -->
+    <mvc:annotation-driven/>
+
+    <!-- 小苗@Controller @Service -->
+    <context:component-scan base-package="com.wyxeainn.controller"/>
+    <context:component-scan base-package="com.wyxeainn.service"/>
+
+    <!-- 注解驱动 -->
+    <mvc:annotation-driven>
+        <mvc:message-converters>
+            <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+                <property name="supportedMediaTypes">
+                    <list>
+                        <value>text/html;charset=UTF-8</value>
+                        <value>application/json;charset=UTF-8</value>
+                        <value>*/*;charset=UTF-8</value>
+                    </list>
+                </property>
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+
+    <!--
+    <mvc:annotation-driven conversion-service="conversionServiceFac"/>
+    -->
+
+    <!-- 配置Conveter转换器 转换日期(日期，去掉前后空格)
+    <bean id="conversionServiceFac" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">-->
+        <!-- 配置多个转换器
+        <property name="converters">
+            <list>-->
+                <!-- 自定义转换器的类，由我来写转换的过程，转换日期
+                <bean class="com.wyxeainn.conversion.DateConveter"/>
+            </list>
+        </property>
+    </bean>
+    -->
+
+    <!-- 上传图片配置实现类 -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!-- 上传图片的大小   B   5M  1*1024*1024*5-->
+        <property name="maxUploadSize" value="5000000"/>
+    </bean>
+
+
+    <!-- Springmvc的异常处理器
+    <bean class="com.wyxeainn.exception.CustomExceptionResolver"/>
+    -->
+
+    <!--
+    配置拦截器:
+    方法前（用户登录）、方法后、页面渲染后
+
+    <mvc:interceptors>-->
+        <!-- 多个拦截器
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/> -->
+            <!-- 自定义的拦截器类
+            <bean class="com.wyxeainn.interceptor.InterceptorOne"/>
+        </mvc:interceptor>
+
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <bean class="com.wyxeainn.interceptor.InterceptorTwo"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+    -->
+
+
+
+</beans>

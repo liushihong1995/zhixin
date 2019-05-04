@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wyxeainn.mapper.NewsMapper">
+
+    <!-- 向news_pub插入一条新闻-->
+    <insert id="insertNew" parameterType="News">
+        insert into news_pub (id,title,content,authorId,newsType,pubTime,lastUpdateTime,psrc) values (#{id},#{title},#{content},#{authorId},#{newsType},#{pubTime},#{lastUpdateTime},#{psrc})
+    </insert>
+
+    <!-- 从top_news中获取一条记录 -->
+    <select id="topGetNew" parameterType="String" resultType="News">
+        select * from top_news where newsType=#{newsType}
+    </select>
+
+    <delete id="topDeleteNew" parameterType="String">
+        delete from top_news where newsType=#{newsType}
+    </delete>
+
+    <insert id="topInsertNew" parameterType="News">
+         insert into top_news (id,title,content,authorId,newsType,pubTime,lastUpdateTime,psrc) values (#{id},#{title},#{content},#{authorId},#{newsType},#{pubTime},#{lastUpdateTime},#{psrc})
+    </insert>
+
+    <insert id="draftInsertNew" parameterType="News">
+         insert into news_draft (id,title,content,authorId,newsType,pubTime,lastUpdateTime,psrc) values (#{id},#{title},#{content},#{authorId},#{newsType},#{pubTime},#{lastUpdateTime},#{psrc})
+    </insert>
+
+    <insert id="trashInsertNew" parameterType="News">
+         insert into news_trash (id,title,content,authorId,newsType,pubTime,lastUpdateTime,psrc) values (#{id},#{title},#{content},#{authorId},#{newsType},#{pubTime},#{lastUpdateTime},#{psrc})
+    </insert>
+
+    <select id="selectAllFromTop" resultType="News">
+        select * from top_news
+    </select>
+
+    <!-- 从news_pub查询一页 -->
+    <select id="selectOnePageFromPub" parameterType="Integer" resultType="News">
+         select * from news_pub limit #{start},10
+    </select>
+
+    <select id="selectOnePageFromPubById" parameterType="Page" resultType="News">
+        select * from news_pub where authorId=#{authorId} order by pubTime desc limit #{start},#{step}
+    </select>
+
+    <select id="selectOnePageFromDraftById" parameterType="Page" resultType="News">
+        select * from news_draft where authorId=#{authorId} order by pubTime desc limit #{start},#{step}
+    </select>
+
+    <select id="selectOnePageFromTrashById" parameterType="Page" resultType="News">
+        select * from news_trash where authorId=#{authorId} order by pubTime desc limit #{start},#{step}
+    </select>
+
+    <select id="recordCountPub" resultType="Integer">
+        select count(*) from news_pub
+    </select>
+
+    <!-- 根据id从news_pub查询-->
+    <select id="selectPubById" parameterType="String" resultType="News">
+        select * from news_pub where id=#{id}
+    </select>
+    <!-- 根据id从news_draft查询-->
+    <select id="selectDraftById" parameterType="String" resultType="News">
+        select * from news_draft where id=#{id}
+    </select>
+    <!-- 根据id从news_trash查询-->
+    <select id="selectTrashById" parameterType="String" resultType="News">
+        select * from news_trash where id=#{id}
+    </select>
+
+    <select id="selectTopById" parameterType="String" resultType="News">
+        select * from top_news where id=#{id}
+    </select>
+
+    <select id="recordCount" parameterType="String" resultType="Integer">
+        select count(*) from ${tableName}
+    </select>
+
+    <update id="updatePubContentById" parameterType="News">
+        update news_pub set content=#{content},lastUpdateTime=#{lastUpdateTime} where id=#{id}
+    </update>
+    <update id="updateTopContentById" parameterType="News">
+        update top_news set content=#{content},lastUpdateTime=#{lastUpdateTime} where id=#{id}
+    </update>
+
+    <delete id="pubDeleteById" parameterType="String">
+        delete from news_pub where id=#{id}
+    </delete>
+    <delete id="draftDeleteById" parameterType="String">
+        delete from news_draft where id=#{id}
+    </delete>
+    <delete id="trashDeleteById" parameterType="String">
+        delete from news_trash where id=#{id}
+    </delete>
+
+    <select id="pubLastestNewByType" parameterType="News" resultType="News">
+        select * from news_pub where authorId=#{authorId} and newsType=#{newsType} order by pubTime limit 0,1
+    </select>
+
+    <!-- 按检索条件查询 -->
+    <select id="selectByCondition" parameterType="Page" resultType="News">
+        select * from ${tableName} where authorId=#{authorId} and newsType like #{newsType} and pubTime like #{pubTime} and title like #{title} order by pubTime limit #{start},#{step}
+    </select>
+
+    <select id="countByCondition" parameterType="Page" resultType="Integer">
+        select count(*) from ${tableName} where authorId=#{authorId} and newsType like #{newsType} and pubTime like #{pubTime} and title like #{title}
+    </select>
+
+
+</mapper>

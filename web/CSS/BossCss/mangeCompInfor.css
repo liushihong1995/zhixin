@@ -1,0 +1,217 @@
+.mangeCompInforHeader{
+    width: 100%;
+    height: 50px;
+    background-color: #0f0f0f;
+}
+.mangeCompInforUp{
+    width: 100%;
+    height: 180px;
+    background-color: #444C5F;
+}
+.up_content{
+    width: 960px;
+    height: 120px;
+    background-color: #444C5F;
+    margin-left: auto;
+    margin-right: auto;
+}
+.compLogoDiv{
+    position: absolute;
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+#compLogo{
+    border-radius: 10px;
+}
+.compInforDiv{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 130px;
+    width: 500px;
+    height: 100px;
+    float: left;
+}
+#compName{
+    width: 400px;
+    height: 30px;
+    font-size: 18px;
+    color: #ffffff;
+}
+#compEdit{
+    margin-left: 60px;
+    font-size: 18px;
+    color: #ffffff;
+}
+#compIndustry{
+    margin-top: 5px;
+    width: 120px;
+    color: #ffffff;
+}
+#compScope{
+    width: 120px;
+    color: #ffffff;
+}
+#compStage{
+    width: 120px;
+    color: #ffffff;
+}
+#compWeb{
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.manageCompInforMid{
+    width: 100%;
+    height: 700px;
+    background-color: #F6F6F8;
+}
+
+.manageCompInforContainer{
+    width: 1000px;
+    height: auto;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.productList{
+    width: 700px;
+    height: auto;
+    margin-left: 100px;
+    border-width: 1px;
+    border-bottom-style: solid;
+    border-color: #F3F7F9;
+}
+.title{
+    width: 700px;
+    height: 50px;
+}
+.productItem{
+    margin-top: 10px;
+    width: 700px;
+    height: 60px;
+    border-width: 1px;
+    border-bottom-style: solid;
+    border-color: #F3F7F9;
+}
+.productLogoDiv{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    float: left;
+}
+.productLogo{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+.productInforDiv{
+    width: 600px;
+    height: 50px;
+    float: right;
+}
+.productName{
+    width: 500px;
+    height: 20px;
+}
+.glyphicon{
+    color: #5e5e5e;
+}
+.proTrash{
+    margin-left: 5px;
+}
+.seniorTrash{
+    margin-left: 5px;
+}
+
+.productInforDiv label{
+    font-weight: lighter;
+    margin-top: 2px;
+}
+.seniorList{
+    margin-top: 20px;
+    width: 700px;
+    height: auto;
+    margin-left: 100px;
+    border-width: 1px;
+    border-bottom-style: solid;
+    border-color: #F3F7F9;
+}
+.seniorItem{
+    margin-top: 10px;
+    width: 700px;
+    height: 60px;
+}
+.seniorPhotoDiv{
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+.seniorInforDiv{
+    margin-left: 50px;
+    width: 150px;
+    height: 50px;
+    float: left;
+}
+.seniorInforDiv label{
+    color: #5e5e5e;
+    font-weight: lighter;
+}
+.seniorIntroduce{
+    width: 345px;
+    height: 43px;
+    float: left;
+    color: #5e5e5e;
+    overflow-y: scroll;
+}
+
+.seniorEdit {
+    margin-left: 10px;
+}
+.seniorIntroduce::-webkit-scrollbar{
+    width: 5px;
+}
+.pictureList{
+    margin-top: 20px;
+    width: 700px;
+    height: auto;
+    margin-left: 100px;
+}
+.pictureItem{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 220px;
+    height: 110px;
+    float: left;
+    border-right-style: solid;
+    border-width: 1px;
+    border-color: #F3F7F9;
+}
+.addPicture{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 220px;
+    height: 110px;
+    float: left;
+    text-align: center;
+}
+.addInfor{
+    margin-top: 20px;
+    width: 800px;
+    height: 60px;
+    text-align: center;
+}
+
+.picTrash{
+    margin-left: 10px;
+}
+
+.blank{
+    width: 800px;
+    height: 100px;
+}

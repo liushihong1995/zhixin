@@ -1,0 +1,265 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.user_footer_up{
+    margin-left: auto;
+    margin-right: auto;
+    width:1000px;
+    height:150px;
+    background-color: #F6F6F8;
+}
+
+h4{
+    font-size: 15px;
+    font-weight: normal;
+}
+/*企业服务样式*/
+.enterprise_service{
+    float: left;
+    width:150px;
+    height:150px;
+}
+.enterprise_service>a{
+    text-decoration: none;
+}
+/*职位搜索*/
+#footer_search_job{
+    position: absolute;
+    margin-top: 10px;
+    color:#5e5e5e;
+    font-size: 12px;
+}
+#footer_search_job>a{
+    text-decoration: none;
+}
+#footer_search_job:hover{
+    color: #5DD5C8;
+}
+/*新闻资讯*/
+#footer_web_news{
+    position: absolute;
+    margin-top: 15px;
+    color: #5e5e5e;
+    font-size: 12px;
+}
+#footer_web_news:hover{
+    color: #5DD5C8;
+}
+/*使用与帮助*/
+.user_help{
+    float: left;
+    width:190px;
+    height:150px;
+}
+.user_help>a{
+    text-decoration: #5DD5C8;
+}
+/*用户协议*/
+#footer_user_protocal{
+    position: absolute;
+    margin-top: 10px;
+    color: #5e5e5e;
+    font-size: 12px;
+}
+#footer_user_protocal:hover{
+    color: #5DD5C8;
+}
+/*防骗指南*/
+#footer_prevention_guide{
+    position: absolute;
+    margin-top: 15px;
+    color: #5e5e5e;
+    font-size: 12px;
+}
+#footer_prevention_guide:hover{
+    color: #5DD5C8;
+}
+/*职位发布规则*/
+#footer_jobpub_rule{
+    position: absolute;
+    margin-top: 20px;
+    color: #5e5e5e;
+    font-size: 12px;
+}
+#footer_jobpub_rule:hover{
+    color: #5DD5C8;
+}
+/*使用帮助*/
+#footer_help{
+    position: absolute;
+    margin-top: 25px;
+    color: #5e5e5e;
+    font-size: 12px;
+}
+#footer_help:hover{
+    color: #5DD5C8;
+}
+/*联系知心招聘*/
+.connect_zhixin{
+    float: left;
+    width:350px;
+    height:150px;
+}
+.connect_zhixin>a{
+    text-decoration: none;
+}
+/*公司名称*/
+#footer_comp_name{
+    position: absolute;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #5e5e5e;
+}
+#footer_comp_name:hover{
+    color: #5DD5C8;
+}
+/*公司地址*/
+#footer_comp_position{
+    position: absolute;
+    margin-top: 15px;
+    font-size: 12px;
+    color: #5e5e5e;
+}
+#footer_comp_position:hover{
+    color: #5DD5C8;
+}
+/*联系电话*/
+#footer_comp_phone{
+    position: absolute;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #5e5e5e;
+}
+#footer_comp_phone:hover{
+    color: #5DD5C8;
+}
+/*举报邮箱*/
+#footer_report_email{
+    position: absolute;
+    margin-top: 25px;
+    font-size: 12px;
+    color: #5e5e5e;
+}
+#footer_report_email:hover{
+    color: #5DD5C8;
+}
+
+.zhixin_web{
+    float: left;
+    width:310px;
+    height:150px;
+}
+
+#footer_zhixin_zhaopin{
+    margin-top: 5px;
+    margin-left: 230px;
+    font-size: 20px;
+    color: #5e5e5e;
+    font-weight: bold;
+}
+
+/*举报电话*/
+#footer_report_phone{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 15px;
+    color: #5e5e5e;
+}
+#footer_report_phone:hover{
+    color: #5DD5C8;
+}
+/*工作日*/
+#footer_weekday{
+    position: absolute;
+    margin-left: 170px;
+    margin-top: 40px;
+    font-size: 15px;
+    color: #5e5e5e;
+}
+#footer_weekday:hover{
+    color: #5DD5C8;
+}
+/*休息日*/
+#footer_relaxday{
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 170px;
+    font-size: 15px;
+    color: #5e5e5e;
+}
+#footer_relaxday:hover{
+    color: #5DD5C8;
+}
+/*版权信息模块*/
+.user_footer_middle{
+    margin-top: 20px;
+    width:1000px;
+    height:40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*版权*/
+#footer_copyright{
+    color: #5e5e5e;
+    font-size: 10px;
+}
+#footer_copyright:hover{
+    color: #5DD5C8;
+}
+/*备案号*/
+#footer_bei_an{
+    margin-left: 50px;
+    color: #5e5e5e;
+    font-size: 10px;
+}
+#footer_bei_an:hover{
+    color: #5DD5C8;
+}
+/*营业执照*/
+#footer_business_licence{
+    margin-left: 50px;
+    color: #5e5e5e;
+    text-decoration: none;
+    font-size: 10px;
+}
+#footer_business_licence:hover{
+    color: #5DD5C8;
+}
+/*新浪微博*/
+#footer_sina_weibo{
+    margin-left: 50px;
+    color: #5e5e5e;
+    text-decoration: none;
+    font-size: 10px;
+}
+#footer_sina_weibo:hover{
+    color: #5DD5C8;
+}
+
+.user_footer_down{
+    width:1000px;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.user_footer_down>a{
+    color: #5e5e5e;
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+.footer_blank{
+    width:100%;
+    height:100px;
+}
+
+
+
+

@@ -1,0 +1,59 @@
+
+.editSeniorContainer{
+    width: 790px;
+    height: 500px;
+}
+
+.seniorPhotoDiv{
+    margin-top: 50px;
+    margin-left: 60px;
+    width: 220px;
+    height: 400px;
+    float: left;
+}
+
+#show_cover{
+    width: 210px;
+    height: 210px;
+}
+
+#changeLogo{
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.seniorInforDiv{
+    margin-left: 20px;
+    margin-top: 50px;
+    width: 400px;
+    height: 400px;
+    float: left;
+}
+.seniorInforDiv label{
+    font-weight: normal;
+    color: #5e5e5e;
+}
+.seniorInforDiv input{
+    width: 270px;
+    height: 40px;
+}
+.itemInfor{
+    width: 400px;
+    height: 70px;
+}
+#introduceInput{
+    width: 270px;
+    height: 60px;
+}
+
+#cancel{
+    margin-top: 20px;
+    margin-left: 200px;
+    background-color: #5DD5C8;
+    color: #ffffff;
+}
+#seniorInforSubmit{
+    margin-top: 20px;
+    margin-left: 30px;
+    background-color: #5DD5C8;
+    color: #ffffff;
+}

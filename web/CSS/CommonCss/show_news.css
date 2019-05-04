@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.show_news_header{
+    width:100%;
+    height:65px;
+    background-color: #ffffff;
+}
+
+/*存放新闻的容器*/
+.show_news_container{
+    width:100%;
+    height: auto;
+    background-color: #F6F6F8;
+}
+
+.show_news_up{
+    display: block;
+    background: url(../../images/show_news_bg.jpg) no-repeat;
+    background-size: 100% 100%;
+    width:100%;
+    height: 450px;
+}
+
+
+/*下部盛放文章*/
+.show_news_down{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -100px;
+    width:1200px;
+    height: auto;
+    background-color: #F6F6F8;
+}
+
+/*置顶文章模块*/
+.top_news{
+    position: absolute;
+    width:1200px;
+    height:340px;
+    background-color: #ffffff;
+}
+
+/*置顶开心一刻*/
+.top_news_happy{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 60px;
+    float: left;
+    width:360px;
+    height:260px;
+}
+
+/*置顶文章干货*/
+.top_news_useful{
+    position: absolute;
+    float: left;
+    margin-top: 40px;
+    margin-left: 420px;
+    width:360px;
+    height:260px;
+    border-left-style: solid;
+    border-left-color: #C5C1AA;
+    border-left-width: 1px;
+    border-right-style: solid;
+    border-right-color: #C5C1AA;
+    border-right-width: 1px;
+}
+
+/*置顶防骗指南*/
+.top_prevent_cheat_guide {
+    position: absolute;
+    float: left;
+    margin-top: 40px;
+    margin-left: 780px;
+    width:360px;
+    height:260px;
+}
+
+.top_up{
+    position: absolute;
+    margin-left: 20px;
+    width:310px;
+    height:30px;
+}
+
+/*类型前的标号*/
+.title_sign{
+    position: absolute;
+    width:5px;
+    height:30px;
+    background-color: #5DD5C8;
+}
+
+/*置顶文章类型*/
+.news_type{
+    position: absolute;
+    font-weight: normal;
+    font-size: 17px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+/*新闻封面*/
+.top_mid{
+    position: absolute;
+    width:310px;
+    height:150px;
+    margin-left: 20px;
+    margin-top: 45px;
+}
+/*新闻题目*/
+.top_down{
+    position: absolute;
+    margin-top: 210px;
+    margin-left: 20px;
+    width:310px;
+    height:50px;
+    font-size: 18px;
+}
+
+.top_down>a{
+    color: #5e5e5e;
+    font-size: 15px;
+}
+
+
+/*文章列表*/
+.news_list{
+    position: absolute;
+    margin-top: 370px;
+    width:1200px;
+    height:auto;
+    background-color: #ffffff;
+}
+
+/*一篇文章*/
+.news_item{
+    position: relative;
+    margin-top: 10px;
+    width:1200px;
+    height:200px;
+}
+
+/*新闻封面*/
+.news_cover{
+    position: absolute;
+    float: left;
+    margin-top: 25px;
+    margin-left: 80px;
+}
+
+/*摘要*/
+.summary{
+    position: absolute;
+    margin-left: 430px;
+    margin-top: 25px;
+    width:700px;
+    height:155px;
+    border-bottom-style: solid;
+    border-bottom-color: #adadad;
+    border-bottom-width: 1px;
+}
+
+.news_title{
+    width:700px;
+    height:40px;
+}
+
+.news_title>a{
+    position: absolute;
+    margin-top: -5px;
+    font-size: 22px;
+    color: #3c3c3c;
+    text-decoration: none;
+}
+
+.news_title>a:hover{
+    text-decoration: none;
+    color: #5DD5C8;
+}
+
+/*文章内容*/
+.news_content{
+    margin-top: 5px;
+    width:700px;
+    height:60px;
+    font-size: 15px;
+    color: #555555;
+    overflow: hidden;
+}
+
+.news_author{
+    margin-top: 15px;
+    width:700px;
+    height:35px;
+}
+
+.news_author>label{
+    margin-top: 10px;
+    font-size: 16px;
+    color: #5e5e5e;
+    font-weight: normal;
+}
+
+.pageNumber{
+    position: absolute;
+    width:1200px;
+    height:120px;
+}
+
+.page_button{
+    text-align: center;
+    margin-top: 40px;
+}

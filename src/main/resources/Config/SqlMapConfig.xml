@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING" />
+    </settings>
+
+    <typeAliases>
+        <!-- 对整个包及其子包以类名起别名 -->
+        <package name="com.wyxeainn.pojo"/>
+    </typeAliases>
+
+    <mappers>
+        <mapper resource="Mapper/AdminMapper.xml"/>
+        <mapper resource="Mapper/CodeMapper.xml"/>
+        <mapper resource="Mapper/NewsMapper.xml"/>
+        <mapper resource="Mapper/SeekerMapper.xml"/>
+        <mapper resource="Mapper/IndustryMapper.xml"/>
+        <mapper resource="Mapper/CityMapper.xml"/>
+        <mapper resource="Mapper/SocialMapper.xml"/>
+        <mapper resource="Mapper/EducationMapper.xml"/>
+        <mapper resource="Mapper/ProjectMapper.xml"/>
+        <mapper resource="Mapper/PracticeMapper.xml"/>
+        <mapper resource="Mapper/HopeMapper.xml"/>
+        <mapper resource="Mapper/ArticleMapper.xml"/>
+        <mapper resource="Mapper/CommentMapper.xml"/>
+        <mapper resource="Mapper/BossMapper.xml"/>
+        <mapper resource="Mapper/CompanyMapper.xml"/>
+        <mapper resource="Mapper/JobMapper.xml"/>
+        <mapper resource="Mapper/ProductMapper.xml"/>
+        <mapper resource="Mapper/SeniorMapper.xml"/>
+        <mapper resource="Mapper/EnvironmentMapper.xml"/>
+    </mappers>
+</configuration>

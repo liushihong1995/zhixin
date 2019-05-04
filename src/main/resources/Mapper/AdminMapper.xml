@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <!DOCTYPE mapper
+                PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+                "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+        <!-- namespace：命名空间，用于隔离sql-->
+        <!-- 写sql语句-->
+<!-- 配置文件实现与接口的绑定 -->
+<mapper namespace="com.wyxeainn.mapper.AdminMapper">
+    <select id="adminLoginCheck" parameterType="Admin" resultType="Integer">
+        select count(phone) from t_admin where phone=#{phone} and encryption=#{encryption}
+    </select>
+
+    <select id="selectByPhone" parameterType="String" resultType="Admin">
+        select * from t_admin where phone=#{phone}
+    </select>
+
+    <!-- 判断账号是否存在 -->
+    <select id="accountExist" parameterType="String" resultType="Integer">
+        select count(*) from t_admin where phone=#{phone}
+    </select>
+
+    <insert id="insertAdmin" parameterType="Admin">
+        insert into t_admin (phone,password,encryption,name,cardNum,department,email,psrc) values (#{phone},#{password},#{encryption},#{name},#{cardNum},#{department},#{email},#{psrc})
+    </insert>
+
+    <!-- 查询记录条数 -->
+    <select id="recordCount" resultType="Integer">
+        select count(*) from t_admin where id!="admin"
+    </select>
+
+    <!-- 进行分页查询 -->
+    <select id="pageQuery" parameterType="Integer" resultType="Admin">
+        select * from t_admin limit #{start},10
+    </select>
+
+    <!-- 按id删除管理员 -->
+    <select id="deleteById" parameterType="Integer">
+        delete from t_admin where id=#{id}
+    </select>
+
+    <!-- 根据id查询管理员记录 -->
+    <select id="selectById" parameterType="Integer" resultType="Admin">
+        select * from t_admin where id=#{id}
+    </select>
+
+    <!-- 根据id更新所在部门和邮箱 -->
+    <update id="updateDepartAndEmail" parameterType="Admin">
+        update t_admin set department=#{department},email=#{email} where id=#{id};
+    </update>
+
+    <!-- 更新指定用户的密码 -->
+    <update id="updatePassword" parameterType="Admin">
+        update t_admin set password=#{password},encryption=#{encryption} where id=#{id};
+    </update>
+
+    <!-- 更新管理员头像-->
+    <update id="updatePsrc" parameterType="Admin">
+        update t_admin set psrc=#{psrc} where id=#{id};
+    </update>
+
+    <!-- 更新管理员手机号码 -->
+    <update id="updatePhoneById" parameterType="Admin">
+        update t_admin set phone=#{phone} where id=#{id}
+    </update>
+
+    <select id="selectIdAndName" resultType="Admin">
+        select id,name from t_admin
+    </select>
+
+</mapper>

@@ -1,0 +1,159 @@
+
+body,html {
+    font: 16px Microsoft YaHei, arial, sans-serif;
+}
+
+.nav_left ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    z-index: 15;
+}
+.nav_right ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    z-index:15;
+}
+
+.nav_left a {
+    text-decoration : none;
+}
+
+.nav_right a{
+    text-decoration : none;
+}
+
+.container{
+    width:300px;
+    height:auto;
+    position:relative;
+    float:left;
+    overflow: visible;
+    z-index:15;
+}
+
+.nav_left{
+    margin-left: -15px;
+    width:300px;
+    height:460px;
+    background:#FFFFFF;
+    overflow: hidden;
+}
+
+.nav_left ul {
+    width: 100%;
+    height: auto;
+}
+
+.nav_left ul li {
+    height:38px;
+    line-height:38px;
+    text-align: left;
+}
+
+.nav_left ul li span {
+    font-size: 15px;
+    padding-left:10px;
+    height:38px;
+    line-height: 38px;
+    display:block;
+    background: #FFFFFF;
+}
+
+.nav_left ul li span:hover {
+    color:#FFFFFF;
+    background:#5DD5C8;
+}
+
+.nav_right{
+    width:700px;
+    height:auto;
+    position:absolute;
+    margin-left:285px;
+    top:0px;
+    background-color: #ffffff;
+    z-index:15;
+}
+
+.sub{
+    position: relative;
+    width: 100%;
+    height:auto;
+    z-index:10;
+    background: #FFFFFF;
+    padding: 10px 0px;
+}
+
+.sub dl {
+    overflow: hide;
+    padding: 0px 0px 10px 0px;
+    background-color:#FFFFFF;
+}
+
+.sub dt {
+    font-size: 13px;
+    color: #5e5e5e;
+    margin-left:10px;
+    width: 690px;
+    float: left;
+    display: block;
+    position: relative;
+    clear: left;
+    background-color:#FFFFFF;
+}
+
+
+.sub dt a {
+    font-size: 20px;
+    color:#000;
+    font_weight: bold;
+    text_align: center;
+    padding-left: 20px;
+    text-decoration:none;
+    cursor: pointer;
+}
+
+.sub dt i {
+    width: 4px;
+    right: 12px;
+    top: 2px;
+    font-size: 15px;
+    position: absolute;
+    font-style: normal;
+}
+
+.sub dd {
+    width: 700px;
+    float: left;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding-right: 20px;
+    border-bottom: 1px dashed #E3E3E3;
+    background-color:#FFFFFF;
+}
+
+.sub dd a{
+    font-size: 12px;
+    float: left;
+    color: #666;
+    padding: 0 10px;
+    margin: 4px 0px 10px 0px;
+    text-decoration: none;
+    cursor: pointer;
+    border-left: 1px solid #E3E3E3;
+}
+
+.sub dd a:hover{
+    color: #5DD5C8;
+    font-weight: bold;
+}
+
+.hide {
+    display:none;
+}
+
+.show {
+    display:block;
+}

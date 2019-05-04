@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wyxeainn.mapper.CompanyMapper">
+    <select id="getCompByFullName" parameterType="String" resultType="Company">
+        select id,fullName,shortName from t_company where fullName like #{fullName} or shortName like #{fullName}
+    </select>
+    <select id="getCompanyById" parameterType="Integer" resultType="Company">
+        select * from t_company where id=#{id}
+    </select>
+    <update id="updateCompany" parameterType="Company">
+        update t_company set shortName=#{shortName},summary=#{summary},stage=#{stage},scope=#{scope},industry=#{industry},industryId=#{industryId},website=#{website},logo=#{logo} where id=#{id}
+    </update>
+    <select id="getBussinessById" parameterType="Integer" resultType="Bussiness">
+        select * from t_business where id=#{id}
+    </select>
+
+    <select id="countCompByIndustryId" parameterType="java.util.List" resultType="Integer">
+        select count(*) from t_company where industryId in <foreach collection="list" item="id" open="("  separator="," close=")">#{id}</foreach>
+    </select>
+
+    <update id="updateIndustryByIndustryId" parameterType="Industry">
+        update t_company set industry=#{second} where industryId=#{id}
+    </update>
+
+    <delete id="deleteCompanyInfor" parameterType="Page">
+        delete from ${tableName} where id=#{id}
+    </delete>
+
+    <select id="getPhotoNameByPage" parameterType="Page" resultType="String">
+        select ${title} from ${tableName} where id=#{id}
+    </select>
+
+</mapper>

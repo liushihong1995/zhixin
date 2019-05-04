@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+.changePhoneContainer{
+    width: 750px;
+    height: 500px;
+}
+
+.changePhone{
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 500px;
+    height: 400px;
+}
+.changePhone label{
+    font-weight: normal;
+    width: 120px;
+    color: #5e5e5e;
+}
+
+#oldPhoneInput{
+    width: 300px;
+    height: 40px;
+    color: #5e5e5e;
+}
+
+#newPhoneInput{
+    width: 300px;
+    height: 40px;
+    color: #5e5e5e;
+}
+
+#dynamicCode{
+    width: 195px;
+    height: 40px;
+}
+
+#getCode{
+    margin-left: 10px;
+    height: 40px;
+    background-color: #5DD5C8;
+    color: #ffffff;
+}
+
+#clearInfor{
+    width: 60px;
+    height: 40px;
+    margin-left: 270px;
+    background-color: #5DD5C8;
+    color: #ffffff;
+}
+#submitChange{
+    width: 60px;
+    height: 35px;
+    margin-left: 30px;
+    background-color: #5DD5C8;
+    color: #ffffff;
+}

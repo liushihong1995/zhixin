@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wyxeainn.mapper.PracticeMapper">
+    <select id="selectPracticeByUserId" parameterType="Integer" resultType="Practice">
+        select * from t_practice where userId=#{userId}
+    </select>
+    <insert id="insertPractice" parameterType="Practice">
+        <selectKey keyProperty="id" resultType="Integer" order="AFTER">
+            select LAST_INSERT_ID();
+        </selectKey>
+        insert into t_practice (comp,industry,depart,job,category,start,end,content,achieve,userId,cateId,industryId,compId) values(#{phone},#{comp},#{industry},#{depart},#{job},#{category},#{start},#{end},#{content},#{achieve},#{userId},#{cateId},#{industryId},#{compId})
+    </insert>
+    <update id="updatePractice" parameterType="Practice">
+        update t_practice set comp=#{comp},industry=#{industry},depart=#{depart},job=#{job},category=#{category},start=#{start},end=#{end},content=#{content},achieve=#{achieve},userId=#{userId},cateId=#{cateId},industryId=#{industryId},compId=#{compId} where id=#{id}
+    </update>
+
+</mapper>

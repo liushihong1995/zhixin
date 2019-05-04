@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.seeker_homepage_up{
+    width:100%;
+    height:50px;
+    background-color: #0f0f0f;
+}
+
+.seeker_homepage_middle{
+    position: absolute;
+    width:100%;
+    height:1000px;
+    background-color: #F6F6F8;
+}
+
+.seeker_homepage_middle_container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    width:1000px;
+    height:500px;
+}
+
+.daohang_container{
+    width:300px;
+    height:500px;
+    background-color: #ffffff;
+    overflow: visible;
+    float: left;
+}
+
+.extend_daohang{
+    width:300px;
+    height:30px;
+    background-color: #ffffff;
+    color: #5DD5C8;
+}
+
+#extend_btn{
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.seeker_homepage_middle_right{
+    width:690px;
+    height:500px;
+    float: right;
+}
+
+.hot_category{
+    margin-top: 10px;
+    margin-left: 10px;
+    width:670px;
+    height: 30px;
+}
+
+.hot_category a{
+    text-decoration: none;
+    font-size: 13px;
+    margin-left: 10px;
+    color: #8c8c8c;
+}
+
+.advert{
+    margin-top: 5px;
+    margin-left: 10px;
+    width:670px;
+    height:405px;
+}
+
+.advert_up{
+    width:670px;
+    height:200px;
+}
+
+.advert_up_left{
+    width:400px;
+    height:200px;
+    float: left;
+}
+
+.adver_up_right{
+    width:270px;
+    height:200px;
+    float: right;
+}
+.advert_down{
+    margin-top: 1px;
+    width:670px;
+    hieght:200px;
+}
+
+.advert_down_left{
+    width:400px;
+    height: 200px;
+    float: left;
+}
+
+.advert_down_right{
+    width:270px;
+    height: 200px;
+    float: right;
+}
+
+.seeker_homepage_down {
+    position: absolute;
+    margin-top: 600px;
+    width: 100%;
+    height: 400px;
+}
+

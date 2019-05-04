@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wyxeainn.mapper.HopeMapper">
+
+    <select id="selectHopeByUserId" parameterType="Integer" resultType="Hope">
+        select * from t_hope where userId=#{userId}
+    </select>
+
+    <insert id="insertHope" parameterType="Hope">
+        <selectKey keyProperty="id" resultType="Integer" order="AFTER">
+            select LAST_INSERT_ID();
+        </selectKey>
+        insert into t_hope (category,industry,city,userId,cateId,industryId,salary) values(#{category},#{industry},#{city},#{userId},#{cateId},#{industryId},#{salary})
+    </insert>
+
+    <update id="updateHope" parameterType="Hope">
+        update t_hope set category=#{category},industry=#{industry},city=#{city},userId=#{userId},cateId=#{cateId},industryId=#{industryId},salary=#{salary} where id=#{id}
+    </update>
+
+    <delete id="deleteHopeById" parameterType="Integer">
+        delete * from t_hope where id=#{id}
+    </delete>
+
+    <select id="countHopeByIndustryId" parameterType="java.util.List" resultType="Integer">
+        select count(*) from t_hope where industryId in <foreach collection="list" item="id" open="("  separator="," close=")">#{id}</foreach>
+    </select>
+
+    <select id="countHopeByCateId" parameterType="java.util.List" resultType="Integer">
+        select count(*) from t_hope where cateId in <foreach collection="list" item="id" open="("  separator="," close=")">#{id}</foreach>
+    </select>
+
+    <update id="updateIndustryByIndustryId" parameterType="Industry">
+        update t_hope set industry=#{second} where industryId=#{id}
+    </update>
+
+    <update id="updateCateByCateId" parameterType="Industry">
+        update t_hope set category=#{third} where cateId=#{id}
+    </update>
+
+    <select id="pageQueryHopeByQueryVo" resultType="Hope">
+        select * from t_hope where userId in <foreach collection="qv.idList" item="id" open="("  separator="," close=")">#{id}</foreach> and category like #{qv.category} and industry like #{qv.industry} and salary like #{qv.salary} limit #{qv.start},#{qv.step}
+    </select>
+
+    <select id="countHopeByQueryVo" resultType="Integer">
+        select count(*) from t_hope where userId in <foreach collection="qv.idList" item="id" open="("  separator="," close=")">#{id}</foreach> and category like #{qv.category} and industry like #{qv.industry} and salary like #{qv.salary} limit #{qv.start},#{qv.step}
+    </select>
+
+
+</mapper>

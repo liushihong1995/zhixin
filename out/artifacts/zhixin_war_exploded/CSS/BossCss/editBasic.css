@@ -1,0 +1,145 @@
+.editBasicContainer{
+    width: 790px;
+    height: 500px;
+}
+.hiddenDiv{
+    position: absolute;
+    width: 790px;
+    height: 500px;
+    background:rgba(0,0,0,0.5);
+    z-index: 20;
+    display: none;
+}
+.hiddenDiv label{
+    margin-top: 5px;
+    font-size: 11px;
+    font-weight: normal;
+}
+.hiddenDiv label:hover{
+    color: #5DD5C8;
+}
+.industryDiv{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    height: 400px;
+    background-color: #ffffff;
+}
+.industry_up{
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 20px;
+    width: 650px;
+    height: 25px;
+}
+#closeIndustry{
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 540px;
+    font-size: 16px;
+}
+.industry_down{
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 60px;
+    width: 650px;
+    height: 320px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.industry_item{
+    width: 650px;
+    height: auto;
+}
+.industry_first{
+    width: 170px;
+    height: auto;
+    float: left;
+}
+.industry_second{
+    width: 420px;
+    height: auto;
+    float: left;
+    border-bottom-style: dotted;
+    border-color: #5e5e5e;
+    border-width: 1px;
+}
+
+.industry_name{
+    width: 170px;
+}
+
+
+.editBasicContainer label{
+    color: #3d4147;
+    font-weight: lighter;
+}
+
+.fullNameDiv{
+    width: 790px;
+    height: 50px;
+}
+#fullName{
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.editCompLogo{
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 220px;
+    height: 250px;
+    float: left;
+}
+.editCompInfor{
+    margin-top: 40px;
+    margin-left: 50px;
+    width: 380px;
+    height: 300px;
+    float: left;
+}
+.compItem{
+    width: 380px;
+    height: 50px;
+}
+.compIntro{
+    width: 380px;
+    height: 60px;
+}
+#introductInput{
+    width: 300px;
+    height: 60px;
+}
+.compItem input{
+    width: 300px;
+    height: 35px;
+}
+.compItem select{
+    width: 300px;
+    height: 35px;
+}
+#changeLogo{
+    margin-top: 15px;
+    margin-left: 70px;
+}
+#choseLogo{
+    background-color: #0f0f0f;
+    color: #ffffff;
+}
+.img-container{
+    width: 220px;
+    height: 220px;
+}
+#cancel{
+    margin-top: 20px;
+    margin-left: 215px;
+    background-color: #5DD5C8;
+    color: #ffffff;
+}
+#subCompInfor{
+    margin-top: 20px;
+    margin-left: 30px;
+    background-color: #5DD5C8;
+    color: #ffffff;
+}

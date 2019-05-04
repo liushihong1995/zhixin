@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.news_edit_container{
+    background-color: #F6F6F8;
+}
+
+/*顶部*/
+.news_edit_up{
+    margin-top: 0px;
+    width:100%;
+    height:50px;
+    background-color: #00BFA5;
+}
+
+.news_edit_title{
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width:1000px;
+    height:50px;
+    background-color: #00BFA5;
+}
+
+/*标题名称*/
+#ne_title{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*编辑资讯的容器*/
+.news_edit_content{
+    width:1000px;
+    height:1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+}
+
+/*文章基本信息模块*/
+.edit_infor{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 100px;
+    width:800px;
+    height:200px;
+}
+
+
+.news_cover{
+    position: absolute;
+    float: left;
+    width:350px;
+    height:200px;
+    border-width: 1px;
+}
+
+/*显示封面的面板*/
+#show_cover{
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 10px;
+    width: 300px;
+    height: 150px;
+}
+
+/*隐藏截取固定尺寸按钮*/
+#cutImage{
+    display: none;
+}
+
+.btn-group{
+    position: absolute;
+    margin-left: 100px;
+    width:100px;
+    height:40px;
+}
+
+/*上传图片按钮*/
+.btn-upload {
+    position: absolute;
+    width:70px;
+    height:30px;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 150px;
+    background-color: #0f0f0f;
+    color: #f9f9f9;
+}
+
+.news_infor{
+    position: absolute;
+    margin-left: 350px;
+    width:500px;
+    height:200px;
+}
+/*用于必填项目前的星号*/
+.must_star{
+    color: #d9534f;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+#news_title_label{
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+#news_title{
+    width:320px;
+    height:35px;
+}
+
+#news_type_label{
+    margin-top: 35px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+#news_type{
+    width:320px;
+    height:35px;
+
+}
+
+#news_author_label{
+    margin-top: 35px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+#news_author{
+    width:320px;
+    height:35px;
+}
+
+/*设置编辑器所在div样式*/
+#myEditor{
+    position: absolute;
+    margin-top: 290px;
+    margin-left: 100px;
+    width:800px;
+    height:530px;
+    background-color:#F6F6F8;
+}
+
+/*设置编辑器的高度*/
+.w-e-text-container{
+    height: 500px !important;
+}
+
+/*存放操作按钮的div的样式*/
+.operate_news{
+    position: absolute;
+    margin-top: 870px;
+    width:1000px;
+    height:50px;
+}
+
+.btn-default{
+    margin-left: 20px;
+    width:100px;
+    height:35px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #f9f9f9;
+    background-color: #5bc0de;
+}
+
+#publish_new{
+    margin-left: 550px;
+}

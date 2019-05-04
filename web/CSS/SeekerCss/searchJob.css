@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.searchJobHeader{
+    width: 100%;
+    height: 50px;
+    background-color: #0f0f0f;
+}
+
+.searchJobContainer{
+    width: 1000px;
+    height: 210px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.searchJobUp{
+    position: absolute;
+    width: 900px;
+    height: 60px;
+    margin-left: 50px;
+    margin-top: 30px;
+
+}
+
+.searchJobMid{
+    position: absolute;
+    width: 900px;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+.cityDiv{
+    width: 900px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.cityDiv label{
+    font-weight: lighter;
+    font-size: 11px;
+}
+.cityDiv label:hover{
+    color: #5DD5C8;
+}
+
+.hotCityName{
+    margin-left: 10px;
+}
+.zoneDiv{
+    width: 900px;
+    height: auto;
+    margin-left: 10px;
+}
+.zoneDiv label{
+    font-weight: lighter;
+    font-size: 11px;
+}
+.zoneDiv label:hover{
+    color: #5DD5C8;
+}
+.zoneName{
+    margin-left: 10px;
+}
+.conditionDiv{
+    width: 900px;
+    height: 50px;
+    margin-left: 10px;
+}
+.conditionDiv label{
+    font-size: 11px;
+    font-weight: lighter;
+}
+.conditionDiv select{
+    width: 100px;
+    height: 20px;
+    margin-left: 20px;
+    color: #5e5e5e;
+    font-size: 11px;
+    border-color: #adadad;
+    font-weight: lighter;
+}
+#clearCondition{
+    margin-left: 30px;
+}
+
+.searchJobContainerDown{
+    width: 100%;
+    height: 500px;
+    background-color: #F2F5FA;
+}
+.blank{
+    width: 1000px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#F2F5FA;
+}
+.searchJobDown{
+    width: 1000px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+}
+
+.jobList{
+    width: 900px;
+    height: auto;
+    margin-left: 50px;
+}
+.jobItem{
+    margin-top: 10px;
+    width: 900px;
+    height: 60px;
+    border-bottom-color: #F2F5FA;
+    border-bottom-style: solid;
+    border-width: 1px;
+}
+.jobItem label{
+    font-size: 12px;
+    font-weight: lighter;
+}
+.jobInfor{
+    margin-top: 5px;
+    width: 298px;
+    height: 50px;
+    float: left;
+}
+.compInfor{
+    margin-top: 5px;
+    width: 298px;
+    height: 50px;
+    float: left;
+}
+.bossInfor{
+    margin-top: 5px;
+    width: 298px;
+    height: 50px;
+    float: left;
+}
+.jobNameLabel{
+    font-size: 16px;
+    color: #5DD5C8;
+}
+.jobNameLabel:hover{
+    color: #5DD5C8;
+    font-weight: normal;
+    text-decoration: none;
+}
+.compShort{
+    color: black;
+    font-size: 16px;
+}
+.compShort:hover{
+    color: black;
+    font-weight: normal;
+    text-decoration: none;
+}
+.jobPage{
+    width: 900px;
+    height: 100px;
+    margin-top: 20px;
+}
+.page{
+    position: absolute;
+    margin-top: 40px;
+    width: 700px;
+    margin-left: 100px;
+    text-align: center;
+}
+
+

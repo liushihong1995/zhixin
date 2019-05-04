@@ -1,0 +1,253 @@
+@charset "UTF-8";
+
+.admin_list_container{
+    width:1220px;
+    height:700px;
+    background-color: #ffffff;
+}
+
+.admin_list_title{
+    position:absolute;
+    margin-top:30px;
+    margin-left:100px;
+    width:1000px;
+    height:50px;
+    background-color: #FFFFFF;
+    border-top-color: #8c8c8c;
+    border-top-style: solid;
+    border-top-width:2px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-left-color: #8c8c8c;
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-right-color: #8c8c8c;
+    border-right-width: 2px;
+    border-right-style: solid;
+
+}
+
+.tableHeader{
+    position: absolute;
+    margin-top:80px;
+    margin-left:100px;
+    width:1000px;
+    height:50px;
+    border-left-color: #8c8c8c;
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-right-color:#8c8c8c;
+    border-right-width: 2px;
+    border-right-style: solid;
+    border-bottom-color: #8c8c8c;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    background-color: #ffffff;
+}
+
+.glyphicon-th-list {
+    margin-top:10px;
+    margin-left:30px;
+    font-size:22px;
+    color:#5e5e5e;
+}
+
+.headerLabel{
+    margin-top:20px;
+    font-size:20px;
+    width:60px;
+    height:30px;
+    color:#5e5e5e;
+}
+
+
+.adminId {
+    margin-left:30px;
+}
+
+.itemId{
+    width:130px;
+    height:20px;
+    /*background-color: #9acfea;*/
+    margin-left:30px;
+}
+
+.adminName{
+    margin-left:150px;
+}
+
+.itemName{
+    width:100px;
+    height:20px;
+    /*background-color: #9acfea;*/
+    margin-left:80px;
+}
+
+.adminDepart{
+    margin-left:100px;
+}
+
+.itemDepart{
+    width:100px;
+    height:20px;
+    /*background-color: #9acfea;*/
+    margin-left:60px;
+}
+
+.brower {
+    margin-left:300px;
+}
+
+.itemBrower{
+    width:30px;
+    height:20px;
+    font-size: 20px;
+    /*background-color: #9acfea;*/
+    margin-left:270px;
+}
+
+.itemBrower:hover{
+    color:#7B68EE;
+}
+
+.delete{
+    margin-left:50px;
+}
+
+.itemDelete{
+    width:30px;
+    height:20px;
+    font-size: 20px;
+    /*background-color: #9acfea;*/
+    margin-left:75px;
+}
+
+.itemDelete:hover{
+    color:#7B68EE;
+}
+
+.blank{
+    position:absolute;
+    margin-left:100px;
+    margin-top:130px;
+    width:1000px;
+    height:20px;
+    border-left-color: #8c8c8c;
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-right-color: #8c8c8c;
+    border-right-width: 2px;
+    border-right-style: solid;
+    background-color: #ffffff;
+}
+
+
+
+.adminlist{
+    position: absolute;
+    margin-left:100px;
+    margin-top:150px;
+    width:1000px;
+    height:450px;
+    border-left-color: #8c8c8c;
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-right-color: #8c8c8c;
+    border-right-width: 2px;
+    border-right-style: solid;
+    border-bottom-color: #8c8c8c;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #ffffff;
+}
+
+
+.item{
+    position: relative;
+    width:995px;
+    height:25px;
+    padding: 0px;
+    font-size:18px;
+    background-color: #ffffff;
+    border-bottom-color: #8c8c8c;
+    border-bottom-width: 2px;
+    border-bottom-style: dotted;
+}
+
+.admin_list_pagination{
+    position: absolute;
+    margin-left:500px;
+    margin-top: 600px;
+    font-size:20px;
+}
+
+.glyphicon-remove{
+    font-size:50px;
+    background-color: #ffffff;
+    color:#0f0f0f;
+}
+
+.hiddenDiv{
+    position: absolute;
+    width:1220px;
+    height:700px;
+    background:rgba(0,0,0,0.5);
+    z-index: 4;
+    display: none;
+}
+
+.close{
+    display: none;
+}
+.showInfor{
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 100px;
+    width:1000px;
+    height:500px;
+    background-color: #ffffff;
+    opacity: 1;
+    z-index:5;
+    display: none;
+}
+
+table{
+    margin-left: 150px;
+    margin-top:100px;
+}
+
+.infor_title{
+    width:600px;
+    heigth:70px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.value_title{
+    width:600px;
+    height: 60px;
+    border-style: solid;
+    border-width: 1px;
+}
+.infor_label{
+    width:100px;
+    height:60px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.value_label{
+    width:250px;
+    height:60px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#recordNum{
+    display: none;
+}
+
+
+

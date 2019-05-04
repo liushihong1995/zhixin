@@ -1,0 +1,262 @@
+@charset "UTF-8";
+
+.update_info_container{
+    width:1220px;
+    height:700px;
+    background-color: #ffffff;
+    border-bottom: #5e5e5e;
+    border-right: #5e5e5e;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-width: 1px;
+}
+
+.left_up{
+    position: absolute;
+    float: left;
+    width:480px;
+    height:310px;
+}
+.right_up{
+    width:720px;
+    height:310px;
+    margin-left: 480px;
+}
+
+/*左下部分，换绑手机号码*/
+.left_down{
+    width:550px;
+    height:300px;
+    float: left;
+}
+
+.right_down{
+    margin-left: 550px;
+    width:650px;
+    height:300px;
+}
+
+/*设置基本信息修改标题的样式*/
+#left_up_title{
+    margin-top: 30px;
+    margin-left:100px;
+    font-size: 23px;
+}
+
+/*设置密码重置标题的样式*/
+#right_down_title{
+    margin-left: 30px;
+    font-size: 23px;
+}
+
+#departLabel{
+    margin-top:50px;
+    margin-left:130px;
+    font-size: 15px;
+    color: #5e5e5e;
+}
+
+#emailLabel{
+    margin-top: 30px;
+    margin-left: 130px;
+    font-size: 15px;
+    color: #5e5e5e;
+}
+
+#department{
+    width:220px;
+    height:35px;
+}
+
+#email{
+    width:220px;
+    height:35px;
+}
+
+#deUpdate{
+    margin-top: 20px;
+    margin-left: 360px;
+    width:70px;
+    height:30px;
+    background-color: #5bc0de;
+    color: #ffffff;
+}
+
+#left_down_title{
+    margin-left: 100px;
+    font-size: 23px;
+}
+
+/*旧手机号码静态文本*/
+#oldPhoneLabel{
+    margin-left: 130px;
+    margin-top: 30px;
+    font-size: 15px;
+    color: #5e5e5e;
+}
+/*旧手机号码文本框*/
+#oldPhone{
+    width:220px;
+    height:35px;
+}
+
+/*旧密码静态文本*/
+#oldPasswordLable{
+    margin-left: 60px;
+    margin-top: 30px;
+    font-size: 15px;
+    color:  #5e5e5e;
+}
+/*旧密码文本框*/
+#oldPassword{
+    width:220px;
+    height: 35px;
+}
+
+#newPhoneLabel{
+    margin-left: 130px;
+    margin-top: 30px;
+    font-size: 15px;
+    color: #5e5e5e;
+}
+#newPhone{
+    width:220px;
+    height:35px;
+}
+#newPasswordLabel{
+    margin-left: 60px;
+    margin-top: 30px;
+    font-size: 15px;
+    color: #5e5e5e;
+}
+#newPassword{
+    width: 220px;
+    height: 35px;
+}
+#codeLabel{
+    margin-left: 130px;
+    margin-top: 30px;
+    font-size: 15px;
+    color: #5e5e5e;
+}
+
+#dynamicCode{
+    width:128px;
+    height: 35px;
+}
+
+#confirPasswordLabel{
+    margin-left: 60px;
+    margin-top: 30px;
+    font-size: 15px;
+    color: #5e5e5e;
+}
+
+#confirPassword{
+    width:220px;
+    height:35px;
+}
+
+
+
+#getCode{
+    background-color: #5bc0de;
+    color: #ffffff;
+}
+
+/*重置按钮*/
+#resetBtn{
+    margin-top: 20px;
+    margin-left: 270px;
+    width:70px;
+    height:30px;
+    background-color: #5bc0de;
+    color: #ffffff;
+}
+
+#onUpdate{
+    margin-top: 20px;
+    margin-left: 20px;
+    width:70px;
+    height:30px;
+    background-color: #5bc0de;
+    color: #ffffff;
+}
+
+#passwordUpdate{
+    margin-top: 20px;
+    margin-left: 285px;
+    width: 70px;
+    height: 30px;
+    background-color: #5bc0de;
+    color: #ffffff;
+}
+
+/*上传图片的容器*/
+.img-container{
+    margin-top: 40px;
+    margin-left: 100px;
+    width:350px;
+    height:250px;
+    float: left;
+    background-color: #dca7a7;
+}
+
+#image {
+    width: 350px;
+    height: 250px;
+}
+
+
+/*按钮组模块样式*/
+.functionButton{
+    position: absolute;
+    margin-left:470px;
+    margin-top: 30px;
+    width:200px;
+    height:300px;
+}
+
+.btn-group{
+    margin-top: 15px;
+}
+
+#dataWidth {
+    width:100px;
+    height:30px;
+    background-color: #dca7a7;
+}
+
+#dataHeight{
+    width:100px;
+    height:30px;
+    background-color: #dca7a7;
+}
+
+#existPass{
+    display: none;
+}
+
+.alert{
+    width:100px;
+    height:30px;
+    font-size: 10px;
+}
+
+.glyphicon-ok{
+    color: #5bc0de;
+    font-size:15px;
+}
+
+.glyphicon-remove {
+    color: #d9534f;
+    font-size:15px;
+}
+
+#newPhoneSign{
+    display: none;
+}
+
+#allCorrect{
+    display: none;
+}

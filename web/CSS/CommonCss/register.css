@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/**
+界面容器
+ */
+.user_register_container{
+    width:100%;
+    height:100%;
+    background-color: #5DD5C8;
+}
+
+.logo{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 100px;
+    width:80px;
+    height:80px;
+    background-color: #ffffff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: #5DD5C8;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.logo>label{
+    margin-left: 17px;
+    margin-top: 12px;
+}
+
+.slogan{
+    position: absolute;
+    margin-top: 65px;
+    margin-left: 200px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.user_register_div{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width:420px;
+    height:500px;
+    background-color: #ffffff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.user_register_up{
+    margin-top: 30px;
+    width:420px;
+    height:100px;
+}
+
+.user_register_up>h2{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 120px;
+    color: #5DD5C8;
+}
+
+#error_hint{
+    position: absolute;
+    margin-left: 125px;
+    margin-top: 60px;
+    font-weight: lighter;
+    color: #FF6347;
+    display: none;
+}
+
+.user_register_middle{
+    width:420px;
+    height:280px;
+}
+
+.user_register_down{
+    width:420px;
+    height:50px;
+}
+
+.form-group{
+    margin-top: 5px;
+    width:420px;
+    height:50px;
+}
+
+.glyphicon{
+    color: #5e5e5e;
+    font-size: 20px;
+}
+
+.input-group-addon{
+    position: absolute;
+    margin-left: 50px;
+    width:50px;
+    height:40px;
+    background-color: #ffffff;
+}
+
+/*身份选择*/
+#chose_identity{
+    margin-left: 100px;
+    width:270px;
+    height:40px;
+    border-color: #adadad;
+}
+
+#phone{
+    margin-left: 100px;
+    width: 270px;
+    height: 40px;
+}
+
+#code{
+    margin-left: 100px;
+    width:170px;
+    height:40px;
+}
+
+#getCode{
+    width:100px;
+    height:40px;
+    background-color: #5DD5C8;
+    color:#ffffff;
+    font-size: 15px;
+}
+
+#submit_infor{
+    margin-top: 15px;
+    margin-left: 50px;
+    width:320px;
+    height:45px;
+    color:#ffffff;
+    background-color: #5DD5C8;
+    font-size: 18px;
+}
+
+
+#protocal_sign{
+    font-weight: normal;
+    margin-left: 60px;
+    color: #5e5e5e;
+}
+
+#noAccount{
+    font-weight: normal;
+    margin-left: 150px;
+    color: #5e5e5e;
+}
+
+#goUserProtocal{
+    text-decoration: none;
+    color: #5DD5C8;
+    font-size: 15px;
+}
+
+#goLogin{
+    text-decoration: none;
+    color: #5DD5C8;
+    font-size: 15px;
+}
+

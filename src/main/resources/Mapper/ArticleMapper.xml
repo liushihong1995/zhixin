@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wyxeainn.mapper.ArticleMapper">
+    <insert id="insertArticle">
+        insert into t_article (title,content,time,status,userId,type) values (#{title},#{content},#{time},#{status},#{userId},#{type})
+    </insert>
+    <select id="getArticleCount" resultType="Integer">
+        select count(*) from t_article
+    </select>
+
+    <select id="getOnePageArticle" parameterType="Page" resultType="Article">
+        select * from t_article where type like #{type} limit #{start},#{step}
+    </select>
+
+    <select id="getArticleById" parameterType="Integer" resultType="Article">
+        select * from t_article where id=#{id}
+    </select>
+
+    <update id="updateVisit" parameterType="Article">
+        update t_article set visit=#{visit} where id=#{id}
+    </update>
+
+    <update id="updateReply" parameterType="Article">
+        update t_article set reply=#{reply} where id=#{id}
+    </update>
+
+    <select id="getHot" resultType="Article">
+        select * from t_article order by visit desc limit 0,5
+    </select>
+</mapper>
